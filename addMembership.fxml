@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: gray;">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="359.0" text="ADD MEMBERSHIP TYPES" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="15.0" layoutY="50.0" prefHeight="50.0" prefWidth="570.0" text="Welcome to our membership management app! Please kindly provide your membership details in the fields below. You can always add more or edit this later." wrapText="true" />
+      <Label layoutX="14.0" layoutY="100.0" text="Membership Type:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="15.0" layoutY="119.0" prefHeight="25.0" prefWidth="281.0" promptText="e.g. Shopping Membership" />
+      <Label layoutX="15.0" layoutY="159.0" text="Membership Name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="14.0" layoutY="178.0" prefHeight="25.0" prefWidth="281.0" promptText="e.g. Shopping Membership" />
+      <Label layoutX="15.0" layoutY="217.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="15.0" layoutY="236.0" prefHeight="25.0" prefWidth="87.0" promptText="Monthly" />
+      <ComboBox layoutX="111.0" layoutY="236.0" prefHeight="25.0" prefWidth="66.0" promptText="IDR" />
+      <TextField layoutX="15.0" layoutY="268.0" prefHeight="25.0" prefWidth="281.0" promptText="Insert your membership price..." />
+      <Label layoutX="15.0" layoutY="303.0" text="Description:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="15.0" layoutY="323.0" prefHeight="42.0" prefWidth="570.0" promptText="Insert your membership description...." />
+      <Label layoutX="317.0" layoutY="100.0" prefHeight="19.0" prefWidth="210.0" text="Auto Payment:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="317.0" layoutY="123.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="AutoPayment" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="367.0" layoutY="123.0" mnemonicParsing="false" text="No" toggleGroup="$AutoPayment" />
+      <Label layoutX="317.0" layoutY="159.0" prefHeight="19.0" prefWidth="210.0" text="Membership Expiration Date:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="317.0" layoutY="182.0" mnemonicParsing="false" text="Date Joined">
+         <toggleGroup>
+            <ToggleGroup fx:id="ExpirationDate" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="412.0" layoutY="182.0" mnemonicParsing="false" text="Specific Date" toggleGroup="$ExpirationDate" />
+      <Label layoutX="317.0" layoutY="217.0" prefHeight="19.0" prefWidth="210.0" text="This Membership Will Expire In:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="317.0" layoutY="240.0" mnemonicParsing="false" text="A Year">
+         <toggleGroup>
+            <ToggleGroup fx:id="Expire" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="384.0" layoutY="240.0" mnemonicParsing="false" text="A Month" toggleGroup="$Expire" />
+      <RadioButton layoutX="457.0" layoutY="240.0" mnemonicParsing="false" text="Lifetime" toggleGroup="$Expire" />
+      <RadioButton layoutX="317.0" layoutY="265.0" mnemonicParsing="false" text="Custom" toggleGroup="$Expire" />
+      <Button layoutX="534.0" layoutY="370.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Save" />
+   </children>
+</AnchorPane>

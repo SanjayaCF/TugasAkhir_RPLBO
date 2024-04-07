@@ -112,10 +112,15 @@
          </font>
       </Label>
       <DatePicker layoutX="317.0" layoutY="236.0" prefHeight="25.0" prefWidth="188.0" />
-      <Label layoutX="317.0" layoutY="271.0" text="Note:">
+      <Label layoutX="317.0" layoutY="271.0" text="Benefit:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      <TextArea layoutX="317.0" layoutY="289.0" prefHeight="65.0" prefWidth="264.0" promptText="Insert your membership's benefit....">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
    </children>
 </AnchorPane>

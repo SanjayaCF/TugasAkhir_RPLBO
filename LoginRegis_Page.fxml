@@ -5,6 +5,7 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
@@ -26,7 +27,6 @@
                   <Label layoutX="21.0" layoutY="69.0" text="Username" />
                   <TextField layoutX="21.0" layoutY="86.0" prefHeight="25.0" prefWidth="289.0" />
                   <Label layoutX="21.0" layoutY="123.0" text="Password" />
-                  <TextField layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="289.0" />
                   <CheckBox layoutX="23.0" layoutY="172.0" mnemonicParsing="false" text="Rembember Me?" />
                   <Button layoutX="21.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="289.0" text="LOGIN">
                      <cursor>
@@ -63,6 +63,7 @@
                      </font>
                   </Label>
                   <Line endX="33.3333740234375" layoutX="283.0" layoutY="290.0" startX="-96.6666259765625" />
+                  <PasswordField layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="289.0" />
                </children>
             </AnchorPane>
          </children>

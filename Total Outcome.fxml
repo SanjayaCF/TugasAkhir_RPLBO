@@ -37,7 +37,10 @@
             <DatePicker accessibleRole="MENU_BUTTON" layoutX="8.0" layoutY="77.0" prefHeight="26.0" prefWidth="116.0" promptText="2024-01-01" />
             <ComboBox layoutX="139.0" layoutY="77.0" prefHeight="26.0" prefWidth="86.0" promptText="Newest" />
             <Button layoutX="740.0" layoutY="77.0" mnemonicParsing="false" text="&lt;" />
-            <Button layoutX="772.0" layoutY="77.0" mnemonicParsing="false" text="&gt;" />
+            <Button layoutX="772.0" layoutY="77.0" mnemonicParsing="false" text="&gt;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
             <Label layoutX="665.0" layoutY="81.0" text="Page 1 of 3" textFill="#898686" />
             <Separator layoutX="15.0" layoutY="143.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="798.0" />
             <Label layoutX="65.0" layoutY="120.0" text="ID" textFill="#a49d9d" />

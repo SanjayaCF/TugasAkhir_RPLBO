@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane maxWidth="-Infinity" prefHeight="490.0" prefWidth="824.0">
          <children>
@@ -26,14 +26,14 @@
             <Separator layoutX="15.0" layoutY="143.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="798.0" />
             <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="16.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@spotify%20icon.png" />
+                  <Image url="@Foto/spotify%20icon.png" />
                </image>
             </ImageView>
             <Label layoutX="87.0" layoutY="87.0" prefHeight="49.0" prefWidth="114.0" text="Spotify" textFill="#706969">
                <font>
                   <Font size="33.0" />
                </font></Label>
-            <Label layoutX="58.0" layoutY="249.0" prefHeight="17.0" prefWidth="316.0" text="ID Transaction        : 202404020712480544" textFill="#706969">
+            <Label layoutX="58.0" layoutY="240.0" prefHeight="17.0" prefWidth="316.0" text="Price                       : IDR 200.000,00 / Month" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font></Label>
@@ -41,32 +41,37 @@
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Label layoutX="58.0" layoutY="165.0" prefHeight="17.0" prefWidth="238.0" text="Name                     : Username" textFill="#706969">
+            <Label layoutX="58.0" layoutY="165.0" prefHeight="21.0" prefWidth="541.0" text="Category                : Music Membership" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="221.0" prefHeight="17.0" prefWidth="270.0" text="Status                     : Active" textFill="#706969">
+            <Label layoutX="58.0" layoutY="215.0" prefHeight="17.0" prefWidth="270.0" text="Auto Payment        : Active" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="275.0" prefHeight="17.0" prefWidth="284.0" text="Payment Method   : D A N A" textFill="#706969">
+            <Label layoutX="58.0" layoutY="265.0" prefHeight="17.0" prefWidth="284.0" text="Payment Method   : DANA" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="304.0" prefHeight="17.0" prefWidth="316.0" text="Ends In                   : 2 May 2024, 07:12 AM" textFill="#706969">
+            <Label layoutX="58.0" layoutY="290.0" prefHeight="17.0" prefWidth="316.0" text="Start Date               : 4 February 2024, 07:12 AM" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="193.0" prefHeight="17.0" prefWidth="253.0" text="Membership Type  : Premium" textFill="#706969">
+            <Label layoutX="58.0" layoutY="190.0" prefHeight="17.0" prefWidth="253.0" text="Type                       : Premium" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Separator layoutX="18.0" layoutY="352.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="798.0" />
+            <Separator layoutX="18.0" layoutY="418.0" maxWidth="-Infinity" prefHeight="3.0" prefWidth="798.0" />
+            <Label layoutX="58.0" layoutY="315.0" prefHeight="17.0" prefWidth="316.0" text="Expiration Date      : 4 March 2024, 07:12 AM" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

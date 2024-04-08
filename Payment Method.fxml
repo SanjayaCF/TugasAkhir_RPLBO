@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="502.0" prefWidth="686.0">
+         <children>
+            <Pane layoutY="255.0" prefHeight="43.0" prefWidth="282.0" style="-fx-border-radius: 30px; -fx-background-color: #c1c4be;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="404.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="8.0" prefHeight="28.0" prefWidth="251.0" text="Choose your payment method">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="74.0" prefWidth="686.0" style="-fx-background-color: #c1c4be;" AnchorPane.bottomAnchor="419.2" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="22.0" prefHeight="40.0" prefWidth="136.0" text="Payment ">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="621.0" layoutY="24.0">
+                     <image>
+                        <Image url="@Foto/Client%20Symbol.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="60.0" layoutY="95.0" prefHeight="27.0" prefWidth="162.0" text="Membership Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="124.0" prefHeight="28.0" prefWidth="136.0" text="Membership Type">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="218.0" prefHeight="34.0" prefWidth="96.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Accordion layoutX="-1.0" layoutY="292.0" prefHeight="200.0" prefWidth="686.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <panes>
+                <TitledPane animated="false" text="Debit or Credit Card">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="742.0">
+                           <children>
+                              <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="101.0" layoutY="11.0">
+                                 <image>
+                                    <Image url="@Foto/Mastercard.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="22.0" fitWidth="53.0" layoutX="33.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@Foto/Visa.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="147.0" layoutY="10.0">
+                                 <image>
+                                    <Image url="@Foto/JCB%20.svg" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="26.0" layoutY="52.0" prefHeight="18.0" prefWidth="96.0" text="Card Number " />
+                              <TextField layoutX="26.0" layoutY="71.0" promptText="ex. Agus Setiawan" />
+                              <Label alignment="CENTER" layoutX="230.0" layoutY="14.0" prefHeight="18.0" prefWidth="114.0" text="Card Holder Name" />
+                              <TextField layoutX="230.0" layoutY="33.0" promptText="1234 9867 4160 3125" />
+                              <Label alignment="CENTER" layoutX="216.0" layoutY="61.0" prefHeight="18.0" prefWidth="96.0" text="Expiry date" />
+                              <TextField layoutX="230.0" layoutY="83.0" prefHeight="26.0" prefWidth="68.0" promptText="12/24" />
+                              <PasswordField layoutX="440.0" layoutY="58.0" prefHeight="26.0" prefWidth="59.0" />
+                              <Label alignment="CENTER" layoutX="404.0" layoutY="37.0" prefHeight="18.0" prefWidth="96.0" text="CVV" />
+                              <Button layoutX="515.0" layoutY="84.0" mnemonicParsing="false" text="Next" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" prefHeight="144.0" prefWidth="726.0" text="ATM or Mobile Banking">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="1.0" prefHeight="26.0" prefWidth="136.0" text="Select your bank option" />
+                              <ScrollPane layoutY="37.0" prefHeight="90.0" prefWidth="744.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="214.0" prefWidth="254.0">
+                                       <children>
+                                          <ButtonBar prefHeight="40.0" prefWidth="251.0">
+                                            <buttons>
+                                                <ImageView fitHeight="32.0" fitWidth="108.0">
+                                                   <image>
+                                                      <Image url="@Foto/Mandiri.png" />
+                                                   </image>
+                                                </ImageView>
+                                              <Button mnemonicParsing="false" prefHeight="26.0" text="Bank Mandiri" />
+                                            </buttons>
+                                          </ButtonBar>
+                                          <ImageView fitHeight="29.0" fitWidth="80.0" layoutX="25.0" layoutY="61.0">
+                                             <image>
+                                                <Image url="@Foto/BRI.svg" />
+                                             </image>
+                                          </ImageView>
+                                          <Button layoutX="142.0" layoutY="62.0" mnemonicParsing="false" prefHeight="26.0" text="Bank BRI" />
+                                          <Button layoutX="143.0" layoutY="117.0" mnemonicParsing="false" prefHeight="26.0" text="Bank BNI" />
+                                          <ImageView fitHeight="34.0" fitWidth="83.0" layoutX="25.0" layoutY="115.0">
+                                             <image>
+                                                <Image url="@Foto/BNI.svg" />
+                                             </image>
+                                          </ImageView>
+                                          <Button layoutX="141.0" layoutY="168.0" mnemonicParsing="false" prefHeight="26.0" text="Bank BCA" />
+                                          <ImageView fitHeight="34.0" fitWidth="82.0" layoutX="25.0" layoutY="168.0">
+                                             <image>
+                                                <Image url="@Foto/BCA.svg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" prefHeight="162.0" prefWidth="759.0" text="Digital Wallet">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="618.0" layoutY="82.0" mnemonicParsing="false" text="Continue" />
+                              <RadioButton layoutX="214.0" layoutY="19.0" mnemonicParsing="false" />
+                              <Label layoutX="14.0" layoutY="20.0" prefHeight="18.0" prefWidth="150.0" text="Fill up your phone number" />
+                              <ImageView fitHeight="27.0" fitWidth="77.0" layoutX="244.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@Foto/ovo.png" />
+                                 </image>
+                              </ImageView>
+                              <RadioButton layoutX="214.0" layoutY="68.0" mnemonicParsing="false" />
+                              <ImageView fitHeight="34.0" fitWidth="114.0" layoutX="237.0" layoutY="57.0">
+                                 <image>
+                                    <Image url="@Foto/Dana.png" />
+                                 </image>
+                              </ImageView>
+                              <RadioButton layoutX="401.0" layoutY="20.0" mnemonicParsing="false" />
+                              <ImageView fitHeight="34.0" fitWidth="88.0" layoutX="430.0" layoutY="12.0">
+                                 <image>
+                                    <Image url="@Foto/gopay.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="43.0" fitWidth="84.0" layoutX="432.0" layoutY="55.0">
+                                 <image>
+                                    <Image url="@Foto/ShopeePay.png" />
+                                 </image>
+                              </ImageView>
+                              <RadioButton layoutX="401.0" layoutY="65.0" mnemonicParsing="false" />
+                              <TextField layoutX="14.0" layoutY="42.0" promptText="08xxxxxxx" />
+                           </children></AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Label layoutX="254.0" layoutY="97.0" prefHeight="22.0" prefWidth="136.0" text="Superindo Market">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="254.0" layoutY="127.0" prefHeight="22.0" prefWidth="104.0" text="Reguler">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="220.0" prefHeight="30.0" prefWidth="114.0" text="Rp.5,200,-">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="136.0" layoutX="535.0" layoutY="96.0">
+               <image>
+                  <Image url="@Foto/superindo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="159.0" prefHeight="22.0" prefWidth="121.0" text="Price">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="192.0" prefHeight="22.0" prefWidth="122.0" text="Platform fee">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="254.0" layoutY="159.0" prefHeight="22.0" prefWidth="136.0" text="Rp. 5,000,- / Month">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="254.0" layoutY="192.0" text="Rp. 200,-">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

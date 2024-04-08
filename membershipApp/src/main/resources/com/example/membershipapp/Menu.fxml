@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.membershipapp.SwitchSceneController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="502.0" prefWidth="170.0">
+               <children>
+                  <AnchorPane prefHeight="502.0" prefWidth="170.0" style="-fx-background-color: gray;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: #F8F8F8;" text="Membership &#10;Management" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gill Sans MT Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Account">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Payment">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="25.0" prefWidth="150.0" text="Log Out">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" onAction="#switchToAddMembershipPage" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Separator layoutX="10.0" layoutY="311.0" prefHeight="24.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Pane prefHeight="502.0" prefWidth="501.0">
+               <children>
+                  <Pane prefHeight="58.0" prefWidth="501.0" style="-fx-background-color: dadada;">
+                     <children>
+                        <SVGPath content="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" fill="#8b8888" layoutX="425.0" layoutY="20.0" scaleX="1.5" scaleY="1.5">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></SVGPath>
+                        <SVGPath content="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0&#10;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1&#10;" layoutX="467.0" layoutY="21.0" scaleX="1.5" scaleY="1.5">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></SVGPath>
+                        <TextField layoutX="50.0" layoutY="16.0" prefHeight="25.0" prefWidth="267.0" promptText="Search Membership..." />
+                        <SVGPath content="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" layoutX="20.0" layoutY="20.0" />
+                        <SVGPath content="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" layoutX="372.0" layoutY="19.0" scaleX="1.5" scaleY="1.5" />
+                        <Button layoutX="369.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToReminderPage" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: transparent;" text="Button">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="137.0" prefHeight="352.0" prefWidth="482.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="465.0">
+                           <children>
+                              <AnchorPane accessibleRole="BUTTON" layoutX="-8.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Superindo Market">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 200.000,00 / Month" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 20th January 2030" textAlignment="RIGHT" />
+                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Shopping Membership" />
+                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free welcome drink" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Auto Paid" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="-8.0" mnemonicParsing="false" onAction="#switchToDetailInformationPage" prefHeight="109.0" prefWidth="482.0" style="-fx-background-color: transparent;" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane layoutX="-8.0" layoutY="109.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Hotel Tentrem Gaharu Gym">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 7.000.000,00 / Year" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 8 April 2025" textAlignment="RIGHT" />
+                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Gym Membership" />
+                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free Gym &amp; Spa Usage" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Paid" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#switchToDetailInformationPage" prefHeight="109.0" prefWidth="482.0" style="-fx-background-color: transparent;" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane layoutX="-8.0" layoutY="218.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Jenius Education">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 450.000,00 / Month" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 30th April 2024" textAlignment="RIGHT" />
+                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Education Membership" />
+                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free Gym &amp; Spa Usage" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #FF0000, #CA0202); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Unpaid" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#switchToDetailInformationPage" prefHeight="109.0" prefWidth="482.0" style="-fx-background-color: transparent;" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane layoutX="-8.0" layoutY="327.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Transmart Market">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 150.000,00 / Month" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 16th May 2025" textAlignment="RIGHT" />
+                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Shopping Membership" />
+                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="127.0" text="- 5% discount all items   - Free shipment" wrapText="true" />
+                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Auto Paid" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#switchToDetailInformationPage" prefHeight="109.0" prefWidth="482.0" style="-fx-background-color: transparent;" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <ComboBox layoutX="10.0" layoutY="103.0" prefHeight="25.0" prefWidth="120.0" promptText="Type">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <DatePicker layoutX="372.0" layoutY="103.0" prefHeight="25.0" prefWidth="120.0" promptText="YYYY-MM-DD">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </DatePicker>
+                  <Label layoutX="10.0" layoutY="74.0" prefHeight="25.0" prefWidth="241.0" text="Filter:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="144.0" layoutY="103.0" prefHeight="25.0" prefWidth="120.0" promptText="Category">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="41.0" layoutY="19.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #d4d2cb;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" prefHeight="50.0" prefWidth="174.0" text="Recommendation" textAlignment="CENTER">
+               <font>
+                  <Font name="Gill Sans MT" size="22.0" />
+               </font>
+            </Label>
+            <SVGPath content="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0&#10;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1&#10;" layoutX="543.0" layoutY="16.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SVGPath>
+         </children>
+      </Pane>
+      <StackPane layoutX="0.8" layoutY="83.2" prefHeight="317.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <ScrollPane prefHeight="347.0" prefWidth="562.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="820.0">
+                     <children>
+                        <Pane prefHeight="335.0" prefWidth="200.0" style="-fx-background-color: ececec; -fx-border-style: Solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="14.0" prefHeight="30.0" prefWidth="174.0" text="Mirota Kampus Maba" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="83.0" prefHeight="50.0" prefWidth="143.0" text="- 10% Shopping Discount - Free Glass" wrapText="true" />
+                              <Label layoutX="44.0" layoutY="217.0" prefHeight="30.0" prefWidth="122.0" text="Rp. 10,000 / Month">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="44.0" text="Shopping Membership" />
+                              <Label alignment="CENTER" layoutX="42.0" layoutY="263.0" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to bottom, #4F58FD, #149BF3); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Join Membership" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="200.0" layoutY="-4.0" prefHeight="306.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="30.0" prefWidth="165.0" text="Celebrity Fitness Silver">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="43.0" layoutY="91.0" prefHeight="79.0" prefWidth="140.0" text="- 5% discount first enroll&#10;- Free Access to 20  Equipment&#10;- Free Welcome Drinks" wrapText="true" />
+                              <Label layoutX="48.0" layoutY="219.0" prefHeight="30.0" prefWidth="130.0" text="Rp. 150,000 / 2 Month">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="53.0" layoutY="44.0" text="Gym Membership" />
+                              <Label alignment="CENTER" layoutX="47.0" layoutY="262.0" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to bottom, #4F58FD, #149BF3); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Join Membership" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="400.0" prefHeight="302.0" prefWidth="200.0" style="-fx-background-color: ececec; -fx-border-style: Solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="38.0" layoutY="14.0" prefHeight="30.0" prefWidth="124.0" text="Ruangguru Basic">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="81.0" prefHeight="64.0" prefWidth="234.0" text="- Free to 10 courses first time&#10; join&#10;- Access to Premium Courses" />
+                              <Label alignment="CENTER" layoutX="39.0" layoutY="258.0" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to bottom, #4F58FD, #149BF3); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Join Membership" textAlignment="CENTER" />
+                              <Label layoutX="29.0" layoutY="217.0" prefHeight="30.0" prefWidth="127.0" text="Rp.  150,000 / Month">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="39.0" layoutY="44.0" text="Education Membership" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="600.0" prefHeight="302.0" prefWidth="200.0" style="-fx-border-style: Solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="38.0" layoutY="14.0" prefHeight="30.0" prefWidth="124.0" text="Planet Sports">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="81.0" prefHeight="64.0" prefWidth="234.0" text="- 30% Discount All Items&#10;- Limited Tote Bag " />
+                              <Label alignment="CENTER" layoutX="39.0" layoutY="258.0" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to bottom, #4F58FD, #149BF3); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Join Membership" textAlignment="CENTER" />
+                              <Label layoutX="29.0" layoutY="217.0" prefHeight="30.0" prefWidth="127.0" text="Rp.  20,000 / Month">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="39.0" layoutY="44.0" text="Sports Good Membership" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </StackPane>
+      <Label layoutX="14.0" layoutY="50.0" prefHeight="30.0" prefWidth="348.0" text="Based on your membership, you might interested in..." />
+   </children>
+</AnchorPane>

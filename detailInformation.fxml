@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane maxWidth="-Infinity" prefHeight="490.0" prefWidth="824.0">
          <children>
@@ -24,50 +24,127 @@
             </SVGPath>
             <Label alignment="TOP_CENTER" layoutX="66.0" layoutY="25.0" prefHeight="4.0" prefWidth="116.0" text="U S E R N A M E" />
             <Separator layoutX="15.0" layoutY="143.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="798.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
             <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="16.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Foto/spotify%20icon.png" />
+                  <Image url="@spotify%20icon.png" />
                </image>
             </ImageView>
             <Label layoutX="87.0" layoutY="87.0" prefHeight="49.0" prefWidth="114.0" text="Spotify" textFill="#706969">
                <font>
                   <Font size="33.0" />
                </font></Label>
-            <Label layoutX="58.0" layoutY="240.0" prefHeight="17.0" prefWidth="316.0" text="Price                       : IDR 200.000,00 / Month" textFill="#706969">
-               <font>
-                  <Font size="15.0" />
-               </font></Label>
             <Button layoutX="750.0" layoutY="367.0" mnemonicParsing="false" text="Back">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Label layoutX="58.0" layoutY="165.0" prefHeight="21.0" prefWidth="541.0" text="Category                : Music Membership" textFill="#706969">
+            <Label layoutX="58.0" layoutY="155.0" prefHeight="21.0" prefWidth="238.0" text="Membership Type" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="215.0" prefHeight="17.0" prefWidth="270.0" text="Auto Payment        : Active" textFill="#706969">
+            <Label layoutX="58.0" layoutY="205.0" prefHeight="17.0" prefWidth="270.0" text="Membership Period" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="265.0" prefHeight="17.0" prefWidth="284.0" text="Payment Method   : DANA" textFill="#706969">
+            <Separator layoutX="18.0" layoutY="352.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="798.0" />
+            <Label layoutX="191.0" layoutY="155.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="290.0" prefHeight="17.0" prefWidth="316.0" text="Start Date               : 4 February 2024, 07:12 AM" textFill="#706969">
+            <Label layoutX="219.0" layoutY="155.0" prefHeight="17.0" prefWidth="238.0" text="Premium" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="190.0" prefHeight="17.0" prefWidth="253.0" text="Type                       : Premium" textFill="#706969">
+            <Label layoutX="58.0" layoutY="180.0" prefHeight="21.0" prefWidth="238.0" text="Price" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Separator layoutX="18.0" layoutY="418.0" maxWidth="-Infinity" prefHeight="3.0" prefWidth="798.0" />
-            <Label layoutX="58.0" layoutY="315.0" prefHeight="17.0" prefWidth="316.0" text="Expiration Date      : 4 March 2024, 07:12 AM" textFill="#706969">
+            <Label layoutX="191.0" layoutY="180.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="180.0" prefHeight="17.0" prefWidth="238.0" text="Rp52.490,00" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="205.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="205.0" prefHeight="17.0" prefWidth="238.0" text="Monthly" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="664.0" layoutY="81.0" mnemonicParsing="false" text="Stop being &#10;the Membership" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="58.0" layoutY="230.0" prefHeight="17.0" prefWidth="270.0" text="Payment Method" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="230.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="230.0" prefHeight="17.0" prefWidth="238.0" text="DANA" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="255.0" prefHeight="17.0" prefWidth="270.0" text="Benefit" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="255.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="234.0" prefHeight="84.0" prefWidth="547.0" text="No Ads, Offline Content,&#10;Improved Audio Quality, No Shuffle Limit" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="297.0" prefHeight="17.0" prefWidth="270.0" text="Started on" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="297.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="297.0" prefHeight="17.0" prefWidth="238.0" text="4th February 2024" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="320.0" prefHeight="17.0" prefWidth="270.0" text="Ended on" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="320.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="320.0" prefHeight="17.0" prefWidth="238.0" text="4th March 2024" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>

@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.loginController">
    <children>
       <AnchorPane prefHeight="447.0" prefWidth="671.0">
          <children>
@@ -25,18 +25,19 @@
                      </font>
                   </Label>
                   <Label layoutX="21.0" layoutY="69.0" text="Username" />
-                  <TextField layoutX="21.0" layoutY="86.0" prefHeight="25.0" prefWidth="289.0" />
+                  <TextField fx:id="txtUsername" layoutX="21.0" layoutY="86.0" prefHeight="25.0" prefWidth="289.0" />
+                  <PasswordField fx:id="txtPassword" layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="289.0" />
                   <Label layoutX="21.0" layoutY="123.0" text="Password" />
                   <CheckBox layoutX="23.0" layoutY="172.0" mnemonicParsing="false" text="Rembember Me?" />
-                  <Button layoutX="21.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="289.0" text="LOGIN">
+                  <Button layoutX="21.0" layoutY="213.0" mnemonicParsing="false" onAction="#btnLoginClick" prefHeight="25.0" prefWidth="289.0" text="LOGIN">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Hyperlink layoutX="208.0" layoutY="238.0" text="Forgot Password?" textFill="GREY" />
+                  <Hyperlink layoutX="208.0" layoutY="238.0" onAction="#switchToForgotPasswordPage" text="Forgot Password?" textFill="GREY" />
                   <Line endX="33.3333740234375" layoutX="111.0" layoutY="290.0" startX="-100.0" />
                   <Label layoutX="91.0" layoutY="364.0" text="Need an Account?" />
-                  <Hyperlink layoutX="186.0" layoutY="361.0" text="SIGN UP" textFill="#020202" underline="true" />
+                  <Hyperlink layoutX="186.0" layoutY="361.0" onAction="#SwitchToRegisPage" text="SIGN UP" textFill="#020202" underline="true" />
                   <SVGPath accessibleRole="BUTTON" content="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08zM15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" fill="RED" layoutX="80.0" layoutY="320.0" scaleX="1.5" scaleY="1.5">
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -63,7 +64,6 @@
                      </font>
                   </Label>
                   <Line endX="33.3333740234375" layoutX="283.0" layoutY="290.0" startX="-96.6666259765625" />
-                  <PasswordField layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="289.0" />
                </children>
             </AnchorPane>
          </children>

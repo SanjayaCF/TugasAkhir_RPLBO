@@ -39,7 +39,7 @@ public class madatabaseConnect {
         if (c != null)
             System.out.println("Berhasil");
 
-        int len = countLen("users");
+        int len = countLen("membershipbuying");
         System.out.println(len);
 
     }

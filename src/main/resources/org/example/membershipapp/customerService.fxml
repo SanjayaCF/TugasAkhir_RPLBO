@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.switchScenesController">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
@@ -25,32 +25,37 @@
                               <Font name="Gill Sans MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Account">
+                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" onAction="#switchToAccount" prefHeight="25.0" prefWidth="150.0" text="Account">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Payment">
+                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" onAction="#switchToPayment" prefHeight="25.0" prefWidth="150.0" text="Payment">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Log Out">
+                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" onAction="#switchToLogOut" prefHeight="25.0" prefWidth="150.0" text="Log Out">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
+                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" onAction="#switchToAddMembershipPage" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy">
+                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" onAction="#switchToPrivacyPolicy" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="251.0" mnemonicParsing="false" onAction="#switchToMenuPage" prefHeight="25.0" prefWidth="150.0" text="Menu">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

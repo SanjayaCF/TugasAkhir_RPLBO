@@ -38,6 +38,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Menu");
         stage.show();
 
     }
@@ -47,6 +48,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Account");
         stage.show();
     }
 
@@ -55,6 +57,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Add Membership");
         stage.show();
     }
 
@@ -63,6 +66,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Payment");
         stage.show();
     }
 
@@ -71,6 +75,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Customer Service");
         stage.show();
     }
 
@@ -79,6 +84,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Privacy & Policy");
         stage.show();
     }
 
@@ -89,6 +95,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Login");
         stage.show();
     }
 
@@ -97,6 +104,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Information");
         stage.show();
     }
 
@@ -105,6 +113,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Activity");
         stage.show();
     }
 
@@ -113,6 +122,7 @@ public class switchScenesController {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Reccomendation");
         stage.show();
     }
 
@@ -121,6 +131,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Reminder");
         stage.show();
     }
 
@@ -129,6 +140,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Stop Membership");
         stage.show();
     }
 
@@ -137,6 +149,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Outcome");
         stage.show();
     }
 
@@ -145,6 +158,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Forgot Password");
         stage.show();
     }
 
@@ -153,6 +167,7 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Confirmation");
         stage.show();
         showLoginCode();
     }
@@ -162,6 +177,7 @@ public class switchScenesController {
         Stage stage = new Stage();
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(new Scene(root));
+        stage.setTitle("Login Code");
         stage.show();
     }
 

@@ -50,7 +50,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#SwitchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -89,7 +89,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                    <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="10.0" layoutY="137.0" prefHeight="352.0" prefWidth="482.0" vbarPolicy="ALWAYS">
+                    <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="137.0" prefHeight="352.0" prefWidth="482.0" vbarPolicy="ALWAYS">
                         <content>
                             <VBox fx:id="scrollPaneContent" minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="465.0" spacing="10" />
                         </content>

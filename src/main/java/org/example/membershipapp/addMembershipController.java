@@ -111,6 +111,11 @@ public class addMembershipController extends switchScenesController{
             a.showAndWait();
         }
     }
+    
+    @FXML
+    protected void onBackButtonClick(ActionEvent event) throws IOException {
+        switchToMenuPage(event);
+    }
 
     
 }

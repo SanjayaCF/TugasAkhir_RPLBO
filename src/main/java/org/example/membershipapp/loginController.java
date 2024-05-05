@@ -57,6 +57,11 @@ public class loginController extends switchScenesController{
     protected void SwitchToRegisPage(ActionEvent event) throws IOException {
         switchToRegisterPage(event);
     }
+    
+    @FXML
+    protected void SwitchToForgotPasswordPage(ActionEvent event) throws IOException {
+        switchToForgotPasswordPage(event);
+    }
 
 }
 

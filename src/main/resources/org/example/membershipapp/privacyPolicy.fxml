@@ -25,32 +25,32 @@
                               <Font name="Gill Sans MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Account">
+                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" onAction="#switchToAccount" prefHeight="25.0" prefWidth="150.0" text="Account">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Payment">
+                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" onAction="#switchToPayment" prefHeight="25.0" prefWidth="150.0" text="Payment">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Log Out">
+                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" onAction="#switchToLogOut" prefHeight="25.0" prefWidth="150.0" text="Log Out">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
+                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" onAction="#switchToAddMembershipPage" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy">
+                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" onAction="#switchToPrivacyPolicy" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

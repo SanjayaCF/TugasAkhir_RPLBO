@@ -2,7 +2,6 @@ package org.example.membershipapp;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
@@ -20,10 +19,8 @@ public class menuController extends switchScenesController{
     public menuController() {
         connection = databaseConnect.getConnection();
     }
-    public static int userID;
     
-    @FXML
-    private ScrollPane scrollPane;
+    public static int userID;
 
     @FXML
     private VBox scrollPaneContent;

@@ -35,12 +35,12 @@
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor></Button>
-                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Payment">
+                        <Button layoutX="11.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Payment" onAction="#SwitchToPayment">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Log Out">
+                        <Button layoutX="11.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Log Out" onAction="#switchToLogOut">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -50,12 +50,12 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Customer Service" onAction="#switchToCustomerService">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy">
+                        <Button layoutX="11.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Privacy &amp; Policy" onAction="#switchToPrivacyPolicy">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

@@ -67,4 +67,25 @@ public class menuController extends switchScenesController{
     protected void SwitchToAddMembership(ActionEvent event) throws IOException {
         switchToAddMembershipPage(event);
     }
+
+    @FXML
+    protected void SwitchToPayment(ActionEvent event) throws IOException {
+        switchToPayment(event);
+    }
+
+    @FXML
+    protected void SwitchToCustomerService(ActionEvent event) throws IOException {
+        SwitchToCustomerService(event);
+    }
+
+    @FXML
+    protected void SwitchToPrivacyPolicy(ActionEvent event) throws IOException {
+        SwitchToPrivacyPolicy(event);
+    }
+
+    @FXML
+    protected void SwitchToLogOut(ActionEvent event) throws IOException {
+        SwitchToLogOut(event);
+    }
 }
+

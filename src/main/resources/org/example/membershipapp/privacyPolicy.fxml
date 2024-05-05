@@ -18,7 +18,7 @@
          <children>
             <VBox prefHeight="502.0" prefWidth="170.0">
                <children>
-                  <AnchorPane prefHeight="502.0" prefWidth="170.0" style="-fx-background-color: gray;">
+                  <AnchorPane prefHeight="502.0" prefWidth="170.0" style="-fx-background-color: linear-gradient(to bottom, #0074D9, #7FDBFF, #39CCCC);;">
                      <children>
                         <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: #F8F8F8;" text="Membership &#10;Management" textAlignment="CENTER">
                            <font>

@@ -45,7 +45,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="About Us">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

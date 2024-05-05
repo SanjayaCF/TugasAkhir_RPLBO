@@ -10,7 +10,7 @@ package org.example.membershipapp;
  */
 public class Main {
     public static void main(final String[] args) {
-        Apps.main(args);
+        Apps.start(args);
     }
     
 }

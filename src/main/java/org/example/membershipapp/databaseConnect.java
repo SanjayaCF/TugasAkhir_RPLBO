@@ -34,15 +34,5 @@ public class databaseConnect {
         return len;
     }
 
-    public static void main(String[] args) throws SQLException {
-        Connection c = getConnection();
-        if (c != null)
-            System.out.println("Berhasil");
-
-        int len = countLen("users");
-        System.out.println(len);
-
-    }
-
 }
 

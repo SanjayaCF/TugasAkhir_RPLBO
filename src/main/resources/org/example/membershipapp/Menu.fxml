@@ -18,7 +18,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.menuController">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
@@ -45,7 +45,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
+                        <Button layoutX="11.0" layoutY="203.0" mnemonicParsing="false" onAction="#SwitchToAddMembership" prefHeight="25.0" prefWidth="150.0" text="Add Membership">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -89,114 +89,11 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="137.0" prefHeight="352.0" prefWidth="482.0">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="465.0">
-                           <children>
-                              <AnchorPane layoutX="-8.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
-                                 <children>
-                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Superindo Market">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 200.000,00 / Month" textAlignment="RIGHT">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 20th January 2030" textAlignment="RIGHT" />
-                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Shopping Membership" />
-                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free welcome drink" wrapText="true" />
-                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Auto Paid" textAlignment="CENTER">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </AnchorPane>
-                              <AnchorPane layoutX="-8.0" layoutY="109.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
-                                 <children>
-                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Hotel Tentrem Gaharu Gym">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 7.000.000,00 / Year" textAlignment="RIGHT">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 8 April 2025" textAlignment="RIGHT" />
-                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Gym Membership" />
-                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free Gym &amp; Spa Usage" wrapText="true" />
-                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Paid" textAlignment="CENTER">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </AnchorPane>
-                              <AnchorPane layoutX="-8.0" layoutY="218.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
-                                 <children>
-                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Jenius Education">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 450.000,00 / Month" textAlignment="RIGHT">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 30th April 2024" textAlignment="RIGHT" />
-                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Education Membership" />
-                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free Gym &amp; Spa Usage" wrapText="true" />
-                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #FF0000, #CA0202); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Unpaid" textAlignment="CENTER">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </AnchorPane>
-                              <AnchorPane layoutX="-8.0" layoutY="327.0" prefHeight="109.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;">
-                                 <children>
-                                    <Label layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="Transmart Market">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="1.0" prefHeight="25.0" prefWidth="241.0" text="IDR 150.000,00 / Month" textAlignment="RIGHT">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Expired 16th May 2025" textAlignment="RIGHT" />
-                                    <Label layoutX="14.0" layoutY="21.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Shopping Membership" />
-                                    <Label layoutX="14.0" layoutY="63.0" opacity="0.8" prefHeight="45.0" prefWidth="127.0" text="- 5% discount all items   - Free shipment" wrapText="true" />
-                                    <Label alignment="CENTER" layoutX="364.0" layoutY="70.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Auto Paid" textAlignment="CENTER">
-                                       <font>
-                                          <Font name="System Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </AnchorPane>
-                           </children>
-                        </AnchorPane>
-                    </content>
-                  </ScrollPane>
+                    <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="10.0" layoutY="137.0" prefHeight="352.0" prefWidth="482.0" vbarPolicy="ALWAYS">
+                        <content>
+                            <VBox fx:id="scrollPaneContent" minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="465.0" spacing="10" />
+                        </content>
+                    </ScrollPane>
                   <ComboBox layoutX="10.0" layoutY="103.0" prefHeight="25.0" prefWidth="120.0" promptText="Type">
                      <cursor>
                         <Cursor fx:constant="HAND" />

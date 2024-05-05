@@ -2,15 +2,9 @@ package org.example.membershipapp;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
@@ -42,7 +36,7 @@ public class loginController extends switchScenesController{
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-
+                menuController.userID = rs.getInt("id");
                 txtUsername.getParent().getScene().getWindow().hide();
                 switchToMenuPage(event);
 

@@ -74,18 +74,28 @@ public class menuController extends switchScenesController{
     }
 
     @FXML
+    protected void SwitchToMenuPage(ActionEvent event) throws IOException {
+        switchToMenuPage(event);
+    }
+
+    @FXML
     protected void SwitchToCustomerService(ActionEvent event) throws IOException {
-        SwitchToCustomerService(event);
+        switchToCustomerService(event);
     }
 
     @FXML
     protected void SwitchToPrivacyPolicy(ActionEvent event) throws IOException {
-        SwitchToPrivacyPolicy(event);
+        switchToPrivacyPolicy(event);
     }
 
     @FXML
     protected void SwitchToLogOut(ActionEvent event) throws IOException {
-        SwitchToLogOut(event);
+        switchToLogOut(event);
+    }
+
+    @FXML
+    protected void SwitchToAccount(ActionEvent event) throws IOException {
+        switchToAccount(event);
     }
 }
 

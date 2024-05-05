@@ -31,7 +31,7 @@
                               <Font name="Gill Sans MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Account">
+                        <Button layoutX="11.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Account" onAction="#switchToAccount">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor></Button>

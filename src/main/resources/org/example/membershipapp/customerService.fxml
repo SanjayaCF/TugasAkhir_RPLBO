@@ -45,7 +45,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="Customer Service">
+                        <Button layoutX="10.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToCustomerService" prefHeight="25.0" prefWidth="150.0" text="About Us">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -67,29 +67,69 @@
             </VBox>
             <Pane prefHeight="502.0" prefWidth="501.0">
                <children>
-                  <Text layoutX="22.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Service" wrappingWidth="334.939453125">
+                  <Text layoutX="22.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us" wrappingWidth="334.939453125">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Text>
-                  <Text layoutX="22.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0819-2222-6666" wrappingWidth="160.8034152984619">
+                  <Text layoutX="31.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+62 888-9999-6666" wrappingWidth="160.8034152984619">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="22.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@membershipmanagement" wrappingWidth="394.13672828674316">
+                  <Text layoutX="31.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@membershipmanagement" wrappingWidth="394.13672828674316">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="22.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="membershipmanagement@gmail.com" wrappingWidth="394.13672828674316">
+                  <Text layoutX="31.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="membershipmanagement@gmail.com" wrappingWidth="394.13672828674316">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="22.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Contact" wrappingWidth="334.939453125">
+                  <Text layoutX="31.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Contact" wrappingWidth="334.939453125">
                      <font>
                         <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="22.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sanjaya Cahyadi Fuad (71220965)" wrappingWidth="394.13672828674316">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="22.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leif Sean Kusumo (71220915)" wrappingWidth="394.13672828674316">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="22.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendy Ananta Kristanto (71220840)" wrappingWidth="394.13672828674316">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="22.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daniel Kimyuwono (71220830)" wrappingWidth="394.13672828674316">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="22.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rich Immanuel Mahendra H (71180396)" wrappingWidth="394.13672828674316">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creator" wrappingWidth="334.939453125">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" wrappingWidth="334.939453125">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[TI0373] REKAYASA PERANGKAT LUNAK BERORIENTASI OBYEK GRUP B" wrappingWidth="394.13672828674316">
+                     <font>
+                        <Font size="16.0" />
                      </font>
                   </Text>
                </children>

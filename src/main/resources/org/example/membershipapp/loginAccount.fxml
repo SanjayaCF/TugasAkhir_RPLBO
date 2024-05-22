@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.loginController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" onKeyPressed="#onKeyPressEvent" fx:controller="org.example.membershipapp.loginController">
    <children>
       <AnchorPane prefHeight="447.0" prefWidth="671.0">
          <children>
@@ -27,6 +27,7 @@
                   <Label layoutX="21.0" layoutY="69.0" text="Username" />
                   <TextField fx:id="txtUsername" layoutX="21.0" layoutY="86.0" prefHeight="25.0" prefWidth="289.0" />
                   <PasswordField fx:id="txtPassword" layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="289.0" />
+                  <TextField fx:id="passwordVisible" layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="289.0" />
                   <Label layoutX="21.0" layoutY="123.0" text="Password" />
                   <CheckBox layoutX="23.0" layoutY="172.0" mnemonicParsing="false" text="Rembember Me?" />
                   <Button layoutX="21.0" layoutY="213.0" mnemonicParsing="false" onAction="#btnLoginClick" prefHeight="25.0" prefWidth="289.0" text="LOGIN">
@@ -64,6 +65,15 @@
                      </font>
                   </Label>
                   <Line endX="33.3333740234375" layoutX="283.0" layoutY="290.0" startX="-96.6666259765625" />
+                  <SVGPath fx:id="closeEye" content="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z&#10;M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" fill="GREY" layoutX="287.0" layoutY="144.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></SVGPath>
+                  <SVGPath fx:id="openEye" content="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0&#10;M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" fill="GREY" layoutX="287.0" layoutY="144.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
                </children>
             </AnchorPane>
          </children>

@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.util.Objects;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -33,15 +35,15 @@ public class switchScenesController {
         stage.show();
     }
 
-    public void switchToMenuPage(ActionEvent event) throws IOException {
+    public void switchToMenuPage(Event event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Menu.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Menu");
         stage.show();
-
     }
+    
 
     public void switchToAccount(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("accountInformation.fxml")));

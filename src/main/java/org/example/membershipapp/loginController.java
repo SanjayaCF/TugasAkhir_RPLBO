@@ -8,6 +8,10 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.sql.*;
+import javafx.event.Event;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.shape.SVGPath;
 
 public class loginController extends switchScenesController{
     private static Connection connection;
@@ -18,16 +22,43 @@ public class loginController extends switchScenesController{
 
     @FXML private TextField txtUsername;
     @FXML private PasswordField txtPassword;
+    @FXML private TextField passwordVisible;
+    @FXML private SVGPath openEye;
+    @FXML private SVGPath closeEye;
+    
+    public void initialize() {
+    txtPassword.textProperty().bindBidirectional(passwordVisible.textProperty());
 
-//    @FXML
-//    protected void onKeyPressEvent(KeyEvent event) throws IOException, SQLException {
-//        if( event.getCode() == KeyCode.ENTER ) {
-//            btnLoginClick(event);
-//        }
-//    }
+    closeEye.setVisible(false);
+    passwordVisible.setVisible(false);
+    txtPassword.setVisible(true);
+    
+    openEye.setOnMouseClicked(event -> {
+        closeEye.setVisible(true);
+        openEye.setVisible(false);
+        passwordVisible.setText(txtPassword.getText());
+        txtPassword.setVisible(false);
+        passwordVisible.setVisible(true);
+    });
+
+    closeEye.setOnMouseClicked(event -> {
+        closeEye.setVisible(false);
+        openEye.setVisible(true);
+        txtPassword.setText(passwordVisible.getText());
+        passwordVisible.setVisible(false);
+        txtPassword.setVisible(true);
+    });
+    }
+    
+    @FXML
+    protected void onKeyPressEvent(KeyEvent event) throws IOException, SQLException {
+        if( event.getCode() == KeyCode.ENTER ) {
+            this.btnLoginClick(event);
+        }
+    }
 
     @FXML
-    protected void btnLoginClick(ActionEvent event) throws IOException, SQLException {
+    protected void btnLoginClick(Event event) throws IOException, SQLException {
         Alert a;
         final String SQL = "SELECT * FROM users WHERE username = ? AND password = ?";
         try (PreparedStatement ps = connection.prepareStatement(SQL);) {

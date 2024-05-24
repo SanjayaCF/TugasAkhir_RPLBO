@@ -1,5 +1,6 @@
 package org.example.membershipapp;
 
+import org.example.membershipapp.manager.SessionManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,9 +12,10 @@ public class Apps extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Apps.class.getResource("loginAccount.fxml"));
+        String resource = SessionManager.getInstance().isLoggedIn()?"Menu":"loginAccount";
+        FXMLLoader fxmlLoader = new FXMLLoader(Apps.class.getResource("view/"+resource+".fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Login");
+        stage.setTitle(resource);
         stage.setScene(scene);
         stage.show();
     }

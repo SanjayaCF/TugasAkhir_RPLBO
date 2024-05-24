@@ -1,5 +1,6 @@
-package org.example.membershipapp;
+package org.example.membershipapp.view;
 
+import org.example.membershipapp.manager.SessionManager;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -93,6 +94,7 @@ public class switchScenesController {
 
 
     public void switchToLogOut(ActionEvent event) throws IOException {
+        SessionManager.getInstance().logout();
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("loginAccount.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

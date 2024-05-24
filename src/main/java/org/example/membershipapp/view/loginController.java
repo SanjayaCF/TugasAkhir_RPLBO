@@ -1,5 +1,7 @@
-package org.example.membershipapp;
+package org.example.membershipapp.view;
 
+import org.example.membershipapp.manager.SessionManager;
+import org.example.membershipapp.manager.databaseConnect;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -9,6 +11,7 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.sql.*;
 import javafx.event.Event;
+import javafx.scene.control.CheckBox;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.shape.SVGPath;
@@ -25,6 +28,7 @@ public class loginController extends switchScenesController{
     @FXML private TextField passwordVisible;
     @FXML private SVGPath openEye;
     @FXML private SVGPath closeEye;
+    @FXML private CheckBox rememberMe;
     
     public void initialize() {
     txtPassword.textProperty().bindBidirectional(passwordVisible.textProperty());
@@ -67,7 +71,11 @@ public class loginController extends switchScenesController{
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                menuController.userID = rs.getInt("id");
+                if (rememberMe.isSelected()) {
+                    SessionManager.getInstance().login(rs.getInt("id"));
+                } else {
+                    menuController.userID = rs.getInt("id");
+                }
                 txtUsername.getParent().getScene().getWindow().hide();
                 switchToMenuPage(event);
 

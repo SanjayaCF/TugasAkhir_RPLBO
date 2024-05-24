@@ -1,5 +1,7 @@
-package org.example.membershipapp;
+package org.example.membershipapp.view;
 
+import org.example.membershipapp.manager.SessionManager;
+import org.example.membershipapp.manager.databaseConnect;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
@@ -21,7 +23,7 @@ public class menuController extends switchScenesController {
         connection = databaseConnect.getConnection();
     }
 
-    public static int userID;
+    public static int userID = SessionManager.getInstance().getUserId();
 
     @FXML
     private VBox scrollPaneContent;

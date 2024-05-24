@@ -1,5 +1,6 @@
-package org.example.membershipapp;
+package org.example.membershipapp.view;
 
+import org.example.membershipapp.manager.databaseConnect;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;

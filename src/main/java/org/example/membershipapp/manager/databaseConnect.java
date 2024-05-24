@@ -1,4 +1,4 @@
-package org.example.membershipapp;
+package org.example.membershipapp.manager;
 
 import java.sql.*;
 

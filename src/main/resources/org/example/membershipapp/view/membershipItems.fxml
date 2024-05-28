@@ -2,30 +2,31 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="150.0" prefWidth="474.0" style="-fx-background-color: ececec; -fx-border-style: solid; -fx-border-width: 1px 0; -fx-border-color: dadada;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.view.membershipItemsController">
+<AnchorPane prefHeight="150.0" prefWidth="716.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: white; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.view.membershipItemsController">
    <children>
-      <Label fx:id="name" layoutX="14.0" layoutY="7.0" prefHeight="25.0" prefWidth="241.0" text="Hotel Tentrem Gaharu Gym">
+      <Label fx:id="name" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="241.0" text="Membership Category">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="price" alignment="CENTER_RIGHT" layoutX="287.0" layoutY="7.0" prefHeight="25.0" prefWidth="161.0" text="IDR 7.000.000,00" textAlignment="RIGHT">
+      <Label fx:id="expired" layoutX="14.0" layoutY="120.0" opacity="0.8" prefHeight="25.0" prefWidth="177.0" text="Expired" textAlignment="RIGHT" />
+      <Label fx:id="category" layoutX="14.0" layoutY="36.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Membership Name" />
+      <Label fx:id="benefit" layoutX="14.0" layoutY="57.0" opacity="0.8" prefHeight="67.0" prefWidth="205.0" wrapText="true" />
+      <Label fx:id="price" alignment="CENTER_RIGHT" layoutX="480.0" layoutY="14.0" prefHeight="25.0" prefWidth="221.0" text="Price" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="expired" layoutX="14.0" layoutY="116.0" opacity="0.8" prefHeight="25.0" prefWidth="177.0" text="Expired 8 April 2025" textAlignment="RIGHT" />
-      <Label fx:id="category" layoutX="14.0" layoutY="27.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Gym Membership" />
-      <Label fx:id="benefit" layoutX="14.0" layoutY="57.0" opacity="0.8" prefHeight="45.0" prefWidth="135.0" text="- 10% discount all items   - Free Gym &amp; Spa Usage" wrapText="true" />
-      <Label fx:id="payType" alignment="CENTER" layoutX="358.0" layoutY="97.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to bottom, #49FF00, #3CCB01); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Paid" textAlignment="CENTER">
+      <Label fx:id="payType" alignment="CENTER" layoutX="599.0" layoutY="104.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(red,green); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Payment" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="interval" alignment="CENTER_RIGHT" layoutX="368.0" layoutY="32.0" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: gray; -fx-background-radius: 5px; -fx-alignment: center;" text="Monthly" textAlignment="RIGHT">
+      <Label fx:id="interval" alignment="CENTER_RIGHT" layoutX="548.0" layoutY="36.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: gray; -fx-background-radius: 5px; -fx-alignment: center;" text="Interval" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -34,4 +35,7 @@
    <cursor>
       <Cursor fx:constant="HAND" />
    </cursor>
+   <effect>
+      <DropShadow height="10.0" radius="4.5" width="10.0" />
+   </effect>
 </AnchorPane>

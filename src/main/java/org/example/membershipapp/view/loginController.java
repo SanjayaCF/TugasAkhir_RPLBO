@@ -71,10 +71,13 @@ public class loginController extends switchScenesController{
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
                 if (rememberMe.isSelected()) {
-                    SessionManager.getInstance().login(rs.getInt("id"));
+                    SessionManager.getInstance().login(id, name);
                 } else {
-                    menuController.userID = rs.getInt("id");
+                    menuController.userID = id;
+                    menuController.userName = name;
                 }
                 txtUsername.getParent().getScene().getWindow().hide();
                 switchToMenuPage(event);

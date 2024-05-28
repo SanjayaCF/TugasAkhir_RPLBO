@@ -8,7 +8,8 @@ public class SessionManager implements Serializable {
 
     private static volatile SessionManager instance;
     private boolean isLoggedIn;
-    private int userId; // New field to store the user ID
+    private int userId;
+    private String userName;
 
     // Private constructor to prevent instantiation from outside
     private SessionManager() {
@@ -43,6 +44,7 @@ public class SessionManager implements Serializable {
             SessionManager sessionManager = (SessionManager) ois.readObject();
             this.isLoggedIn = sessionManager.isLoggedIn;
             this.userId = sessionManager.userId;
+            this.userName = sessionManager.userName;
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error loading session: " + e.getMessage());
         }
@@ -65,10 +67,14 @@ public class SessionManager implements Serializable {
     public int getUserId() {
         return userId;
     }
+    
+    public String getUserName() {
+        return userName;
+    }
 
-    // Method to simulate login with user ID
-    public void login(int userId) {
+    public void login(int userId, String userName) {
         this.userId = userId;
+        this.userName = userName;
         isLoggedIn = true;
         saveSession();
     }

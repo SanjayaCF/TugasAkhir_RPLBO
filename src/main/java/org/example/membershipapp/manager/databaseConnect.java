@@ -33,6 +33,20 @@ public class databaseConnect {
         }
         return len;
     }
+    
+    public static int countCondition(String databaseName, String condition) throws SQLException {
+        int len = 0;
+        final String SQL = String.format("SELECT count(*) as jumlah FROM %s WHERE %s",databaseName,condition);
+        try (PreparedStatement ps = cons.prepareStatement(SQL)) {
+            //ps.setString(1, databaseName);
+            ResultSet rs = ps.executeQuery();
+            len = rs.getInt("jumlah");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return len;
+    }
 
 }
 

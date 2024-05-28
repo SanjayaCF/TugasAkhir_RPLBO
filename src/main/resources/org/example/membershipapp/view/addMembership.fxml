@@ -3,12 +3,9 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
@@ -30,25 +27,17 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="membershipCategoryTextField" layoutX="35.0" layoutY="119.0" prefHeight="25.0" prefWidth="281.0" promptText="e.g. Shopping Membership">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor></TextField>
       <Label layoutX="35.0" layoutY="159.0" text="Membership Name:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="membershipNameTextField" layoutX="34.0" layoutY="178.0" prefHeight="25.0" prefWidth="281.0" promptText="e.g. Shopping Membership">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor></TextField>
       <Label layoutX="35.0" layoutY="217.0" text="Price:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="priceTextField" layoutX="35.0" layoutY="236.0" prefHeight="25.0" prefWidth="281.0" promptText="Insert your membership price...">
+      <TextField fx:id="priceTextField" layoutX="35.0" layoutY="236.0" prefHeight="25.0" prefWidth="281.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
@@ -74,7 +63,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="membershipLinkTextField" layoutX="35.0" layoutY="327.0" prefHeight="25.0" prefWidth="281.0" promptText="Insert your membership link...">
+      <TextField fx:id="membershipLinkTextField" layoutX="35.0" layoutY="327.0" prefHeight="25.0" prefWidth="281.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
@@ -84,48 +73,39 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <RadioButton fx:id="autoPaymentYesRadioButton" layoutX="337.0" layoutY="123.0" mnemonicParsing="false" text="Yes">
-         <toggleGroup>
-            <ToggleGroup fx:id="AutoPayment" />
-         </toggleGroup>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </RadioButton>
-      <RadioButton fx:id="autoPaymentNoRadioButton" layoutX="387.0" layoutY="123.0" mnemonicParsing="false" text="No" toggleGroup="$AutoPayment">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></RadioButton>
       <Label layoutX="337.0" layoutY="159.0" prefHeight="19.0" prefWidth="210.0" text="Membership Start Date:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker fx:id="startDatePicker" layoutX="337.0" layoutY="178.0" prefHeight="25.0" prefWidth="188.0" />
       <Label layoutX="337.0" layoutY="217.0" prefHeight="19.0" prefWidth="210.0" text="Membership Expiration Date:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker fx:id="expirationDatePicker" layoutX="337.0" layoutY="236.0" prefHeight="25.0" prefWidth="188.0" />
       <Label layoutX="337.0" layoutY="271.0" text="Benefit:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextArea fx:id="benefitTextArea" layoutX="337.0" layoutY="289.0" prefHeight="65.0" prefWidth="264.0" promptText="Insert your membership's benefit....">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor>
-      </TextArea>
       <Button layoutX="554.0" layoutY="447.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="51.0" text="Save">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button layoutX="495.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="25.0" prefWidth="51.0" text="Back">
+      <Button fx:id="btnSave" layoutX="495.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="25.0" prefWidth="51.0" text="Back">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ComboBox fx:id="membershipCategoryComboBox" layoutX="34.0" layoutY="119.0" prefHeight="25.0" prefWidth="281.0" promptText="Choose Membership Category" />
+      <ComboBox fx:id="membershipsComboBox" layoutX="35.0" layoutY="178.0" prefHeight="25.0" prefWidth="281.0" promptText="Choose Membership" />
+      <TextField fx:id="startDatePicker" layoutX="337.0" layoutY="178.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="expirationDatePicker" layoutX="337.0" layoutY="236.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label fx:id="autoPayment" alignment="CENTER" layoutX="337.0" layoutY="123.0" prefHeight="17.0" prefWidth="87.0" style="-fx-background-color: gray; -fx-background-radius: 5px; -fx-font-weight: bold;" text="YES/NO" />
+      <TextArea fx:id="benefitTextArea" layoutX="337.0" layoutY="289.0" prefHeight="65.0" prefWidth="264.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
    </children>
 </AnchorPane>

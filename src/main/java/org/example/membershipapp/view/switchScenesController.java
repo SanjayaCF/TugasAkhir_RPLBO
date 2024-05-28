@@ -10,7 +10,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -19,6 +18,7 @@ public class switchScenesController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    
 
     public void switchToLoginPage(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoginAccount.fxml")));
@@ -33,6 +33,15 @@ public class switchScenesController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void switchToAdminPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("adminDashboard.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Admin Dashboard");
         stage.show();
     }
 
@@ -55,12 +64,13 @@ public class switchScenesController {
         stage.show();
     }
 
-    public void switchToAddMembershipPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("addMembership.fxml")));
+    
+    public void switchToCreateMembershipPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("createMembership.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Add Membership");
+        stage.setTitle("Create Membership");
         stage.show();
     }
 
@@ -182,6 +192,14 @@ public class switchScenesController {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(new Scene(root));
         stage.setTitle("Login Code");
+        stage.show();
+    }
+    
+        public void createMembership() throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("createMembership.fxml")));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Create Membership");
         stage.show();
     }
 

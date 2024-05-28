@@ -47,12 +47,13 @@ public class regisController extends switchScenesController{
         boolean checkPass = txtPassword.getText().equals(txtConfirmPassword.getText());
 
         if (checkPass && this.validate(txtUsername.getText(), txtName.getText())) {
-            final String SQL2 = "INSERT INTO users VALUES(?, ?, ?, ?)";
+            final String SQL2 = "INSERT INTO users(id, username, password, name, privilege) VALUES(?, ?, ?, ?, ?)";
             try (PreparedStatement ps = connection.prepareStatement(SQL2)) {
                 ps.setInt(1, databaseConnect.countLen("users")+1);
                 ps.setString(2, txtUsername.getText());
                 ps.setString(3, txtPassword.getText());
                 ps.setString(4, txtName.getText());
+                ps.setBoolean(5,false);
                 ps.executeUpdate();
 
                 a = new Alert(Alert.AlertType.CONFIRMATION);

@@ -17,11 +17,6 @@
          <children>
             <AnchorPane layoutX="154.0" layoutY="14.0" prefHeight="431.0" prefWidth="331.0">
                <children>
-                  <Label layoutX="14.0" layoutY="25.0" text="REGISTER">
-                     <font>
-                        <Font name="Gill Sans MT Bold" size="14.0" />
-                     </font>
-                  </Label>
                   <Label layoutX="21.0" layoutY="118.0" text="Username" />
                   <TextField fx:id="txtUsername" layoutX="21.0" layoutY="135.0" prefHeight="25.0" prefWidth="289.0" />
                   <Label layoutX="21.0" layoutY="168.0" text="Name" />
@@ -62,5 +57,10 @@
             </AnchorPane>
          </children>
       </AnchorPane>
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="641.0" style="-fx-background-color: linear-gradient(to top, #05071F, #0D1B3E, #1F3B73);" text="REGISTER" textAlignment="CENTER" textFill="WHITE" translateY="-180.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </StackPane>

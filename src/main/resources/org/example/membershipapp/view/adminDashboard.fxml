@@ -65,7 +65,6 @@
       </VBox>
       <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
          <children>
-            <Pane fx:id="pnlSignOut" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" />
             <Pane fx:id="pnlMemberships" prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: white;">
                <children>
                   <Label layoutX="57.0" layoutY="25.0" text="Admin Dashboard">
@@ -108,11 +107,6 @@
             </Pane>
             <Pane fx:id="pnlMenu" prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: white;">
                <children>
-                  <Label layoutX="57.0" layoutY="25.0" text="Admin Dashboard">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Label>
                   <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
                      <children>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
@@ -171,6 +165,15 @@
                         </VBox>
                      </content>
                   </ScrollPane>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="793.0" style="-fx-background-color: #05071F;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="347.0" text="Admin Dashboard" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
                </children>
             </Pane>
          </children>

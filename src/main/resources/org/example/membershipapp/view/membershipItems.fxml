@@ -21,7 +21,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="payType" alignment="CENTER" layoutX="599.0" layoutY="104.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(red,green); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Payment" textAlignment="CENTER">
+      <Label fx:id="payType" alignment="CENTER" layoutX="599.0" layoutY="104.0" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to top, #1e3c72, #2a5298, #76a7f3); -fx-background-radius: 50px; -fx-padding: 3px; -fx-text-fill: #F8F8F8;" text="Payment" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

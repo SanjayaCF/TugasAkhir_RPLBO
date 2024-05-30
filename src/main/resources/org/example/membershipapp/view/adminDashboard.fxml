@@ -17,7 +17,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.view.adminController">
    <children>
-      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: linear-gradient(to top, #05071F, #0D1B3E, #1F3B73);" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
                <VBox.margin>
@@ -35,7 +35,7 @@
                </font>
             </Label>
             <AnchorPane prefHeight="79.0" prefWidth="256.0" />
-            <Button fx:id="btnMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="247.0" style="-fx-text-alignment: center; -fx-background-color: #05071F; -fx-font-weight: bold; -fx-border-color: white;" text="Menu" textFill="WHITE">
+            <Button fx:id="btnMenu" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="247.0" style="-fx-text-alignment: center; -fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-font-weight: bold; -fx-border-color: white;" text="Menu" textFill="WHITE">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -44,7 +44,7 @@
                </cursor>
             </Button>
             <AnchorPane prefHeight="9.0" prefWidth="256.0" />
-            <Button fx:id="btnMemberships" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="247.0" style="-fx-text-alignment: center; -fx-background-color: #05071F; -fx-font-weight: bold; -fx-background-color: #05071F; -fx-border-color: white;" text="Memberships" textFill="WHITE">
+            <Button fx:id="btnMemberships" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="247.0" style="-fx-text-alignment: center; -fx-background-color: #05071F; -fx-font-weight: bold; -fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-border-color: white;" text="Memberships" textFill="WHITE">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -53,7 +53,7 @@
                </cursor>
             </Button>
             <AnchorPane prefHeight="212.0" prefWidth="256.0" />
-            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#SwitchToMenuPage" prefHeight="27.0" prefWidth="149.0" style="-fx-text-alignment: center; -fx-background-color: #05071F; -fx-font-weight: bold; -fx-background-color: white; -fx-border-color: white; -fx-border-radius: 15;" text="Back">
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#SwitchToMenuPage" prefHeight="27.0" prefWidth="129.0" style="-fx-text-alignment: center; -fx-font-weight: bold; -fx-background-color: linear-gradient(to bottom, #ffffff, #e0e0e0, #c0c0c0);" text="Back">
                <padding>
                   <Insets left="50.0" />
                </padding>

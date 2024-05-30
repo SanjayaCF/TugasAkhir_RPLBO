@@ -9,17 +9,16 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="41.0" layoutY="19.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #d4d2cb;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane layoutX="41.0" layoutY="19.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to top, #05071F, #0D1B3E, #1F3B73);" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label alignment="CENTER" layoutX="1.0" prefHeight="50.0" prefWidth="174.0" text="Recommendation" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="20.0" prefHeight="50.0" prefWidth="174.0" text="Recommendation" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Gill Sans MT" size="22.0" />
                </font>
             </Label>
-            <SVGPath content="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0&#10;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1&#10;" layoutX="543.0" layoutY="16.0">
+            <SVGPath content="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0&#10;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1&#10;" fill="WHITE" layoutX="543.0" layoutY="16.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

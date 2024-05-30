@@ -20,23 +20,23 @@
    <children>
       <AnchorPane prefHeight="502.0" prefWidth="686.0">
          <children>
-            <Pane layoutY="255.0" prefHeight="43.0" prefWidth="282.0" style="-fx-border-radius: 30px; -fx-background-color: #c1c4be;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="404.0">
+            <Pane layoutY="255.0" prefHeight="43.0" prefWidth="744.0" style="-fx-border-radius: 30px; -fx-background-color: #05071F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
-                  <Label layoutX="7.0" layoutY="8.0" prefHeight="28.0" prefWidth="251.0" text="Choose your payment method">
+                  <Label layoutX="26.0" layoutY="4.0" prefHeight="28.0" prefWidth="251.0" text="Choose your payment method" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
                </children>
             </Pane>
-            <Pane prefHeight="74.0" prefWidth="686.0" style="-fx-background-color: linear-gradient(to right, #39CCCC, #7FDBFF, #0074D9);" AnchorPane.bottomAnchor="419.2" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Pane prefHeight="74.0" prefWidth="686.0" style="-fx-background-color: linear-gradient(to top, #05071F, #0D1B3E, #1F3B73);" AnchorPane.bottomAnchor="419.2" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label alignment="CENTER" layoutX="14.0" layoutY="22.0" prefHeight="40.0" prefWidth="136.0" text="Payment ">
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="15.0" prefHeight="40.0" prefWidth="136.0" text="Payment " textFill="WHITE">
                      <font>
                         <Font size="29.0" />
                      </font>
                   </Label>
-                  <Button layoutX="627.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToMenuPage" prefHeight="34.0" prefWidth="76.0" text="Back" />
+                  <Button layoutX="644.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToMenuPage" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-border-color: white;" text="Back" textFill="WHITE" />
                </children>
             </Pane>
             <Label layoutX="60.0" layoutY="95.0" prefHeight="27.0" prefWidth="162.0" text="Membership Name">

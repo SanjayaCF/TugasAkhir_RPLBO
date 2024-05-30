@@ -12,16 +12,16 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.view.addMembershipController">
    <children>
-      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: linear-gradient(to right, #0074D9, #7FDBFF, #39CCCC);;">
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: linear-gradient(to top, #05071F, #0D1B3E, #1F3B73);">
          <children>
-            <Label alignment="CENTER" prefHeight="33.0" prefWidth="359.0" text="ADD MEMBERSHIP TYPES" textAlignment="CENTER">
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="359.0" text="ADD MEMBERSHIP" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
          </children>
       </HBox>
-      <Label layoutX="35.0" layoutY="50.0" prefHeight="50.0" prefWidth="531.0" text="Welcome to our membership management app! Please kindly provide your membership details in the fields below. You can always add more or edit this later." wrapText="true" />
+      <Label layoutX="35.0" layoutY="50.0" prefHeight="50.0" prefWidth="531.0" text="Welcome Admin, please add the corresponding parts for your Memberships data. Kindly contact us if you have any problem." wrapText="true" />
       <Label layoutX="34.0" layoutY="100.0" text="Membership Category:">
          <font>
             <Font name="System Bold" size="13.0" />

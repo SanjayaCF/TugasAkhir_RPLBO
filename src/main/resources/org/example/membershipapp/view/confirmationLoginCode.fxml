@@ -21,12 +21,12 @@
                      </cursor>
                   </Button>
                   <Label layoutX="37.0" layoutY="98.0" text="Enter the 6-digit confirmation code that are sent." textAlignment="CENTER" textFill="#acacac" />
-                  <Label layoutX="65.0" layoutY="72.0" text="ENTER CONFIRMATION CODE">
+                  <Label layoutX="76.0" layoutY="72.0" text="ENTER CONFIRMATION CODE">
                      <font>
                         <Font name="Gill Sans MT Bold" size="13.0" />
                      </font>
                   </Label>
-                  <Label layoutX="20.0" layoutY="132.0" text="Login Code" />
+                  <Label layoutX="24.0" layoutY="132.0" text="Login Code" />
                </children>
             </AnchorPane>
          </children>

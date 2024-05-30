@@ -15,9 +15,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.membershipapp.view.createMembershipController">
    <children>
-      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: linear-gradient(to right, #0074D9, #7FDBFF, #39CCCC);">
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: linear-gradient(to top, #05071F, #0D1B3E, #1F3B73);">
          <children>
-            <Label alignment="CENTER" prefHeight="33.0" prefWidth="359.0" text="Create MEMBERSHIP TYPES" textAlignment="CENTER">
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="359.0" text="CREATE MEMBERSHIP" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>

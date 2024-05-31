@@ -72,7 +72,7 @@
                      <children>
                         <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="370.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Foto/ikonBell.png" />
+                              <Image url="@../Foto/ikonBell.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="HAND" />
@@ -99,17 +99,17 @@
                      <children>
                         <TextField fx:id="searchField" layoutX="36.0" layoutY="17.0" prefHeight="25.0" prefWidth="204.0" promptText="Search Membership..." />
                         <SVGPath content="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" layoutX="14.0" layoutY="21.0" />
-                        <ComboBox layoutX="303.0" layoutY="17.0" prefHeight="25.0" prefWidth="120.0" promptText="Type">
+                        <ComboBox fx:id="comboboxTypes" layoutX="303.0" layoutY="17.0" prefHeight="25.0" prefWidth="120.0" promptText="Type">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ComboBox>
-                        <ComboBox layoutX="436.0" layoutY="17.0" prefHeight="25.0" prefWidth="120.0" promptText="Category">
+                        <ComboBox fx:id="comboboxCategories" layoutX="436.0" layoutY="17.0" prefHeight="25.0" prefWidth="120.0" promptText="Category">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ComboBox>
-                        <DatePicker layoutX="565.0" layoutY="17.0" prefHeight="25.0" prefWidth="120.0" promptText="YYYY-MM-DD">
+                        <DatePicker fx:id="tanggal" layoutX="565.0" layoutY="17.0" prefHeight="25.0" prefWidth="120.0" promptText="YYYY-MM-DD">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

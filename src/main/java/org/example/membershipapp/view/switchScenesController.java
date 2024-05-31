@@ -29,7 +29,7 @@ public class switchScenesController {
     }
 
     public void switchToRegisterPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("RegisterAccount.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("RegisterAccount.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -37,7 +37,7 @@ public class switchScenesController {
     }
     
     public void switchToAdminPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("adminDashboard.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("adminDashboard.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -46,7 +46,7 @@ public class switchScenesController {
     }
 
     public void switchToMenuPage(Event event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Menu.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Menu.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -56,7 +56,7 @@ public class switchScenesController {
     
 
     public void switchToAccount(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("accountInformation.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("accountInformation.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -66,7 +66,7 @@ public class switchScenesController {
 
     
     public void switchToCreateMembershipPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("createMembership.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("createMembership.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -75,7 +75,7 @@ public class switchScenesController {
     }
 
     public void switchToPayment(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("paymentMethod.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("paymentMethod.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -83,29 +83,10 @@ public class switchScenesController {
         stage.show();
     }
 
-    public void switchToCustomerService(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("customerService.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("Customer Service");
-        stage.show();
-    }
-
-    public void switchToPrivacyPolicy(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("privacyPolicy.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("Privacy & Policy");
-        stage.show();
-    }
-
-
 
     public void switchToLogOut(ActionEvent event) throws IOException {
         SessionManager.getInstance().logout();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("loginAccount.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("loginAccount.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -114,7 +95,7 @@ public class switchScenesController {
     }
 
     public void switchToDetailInformationPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("DetailInformation.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("DetailInformation.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -123,7 +104,7 @@ public class switchScenesController {
     }
 
     public void switchToListActivityPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("List Activity.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("List Activity.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -132,8 +113,8 @@ public class switchScenesController {
     }
 
     public void switchToRekomendasiPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Rekomendasi.fxml")));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Rekomendasi.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Reccomendation");
@@ -141,7 +122,7 @@ public class switchScenesController {
     }
 
     public void switchToReminderPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Reminder.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Reminder.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -150,7 +131,7 @@ public class switchScenesController {
     }
 
     public void switchToStopMembershipPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Stop the Membership.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Stop the Membership.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -159,7 +140,7 @@ public class switchScenesController {
     }
 
     public void switchToTotalOutcomePage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Total Outcome.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Total Outcome.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -168,7 +149,7 @@ public class switchScenesController {
     }
 
     public void switchToForgotPasswordPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ForgotPassword.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ForgotPassword.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -177,7 +158,7 @@ public class switchScenesController {
     }
 
     public void switchToConfirmationLoginPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ConfirmationLoginCode.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ConfirmationLoginCode.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -187,8 +168,8 @@ public class switchScenesController {
     }
 
     public void showLoginCode() throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoginCodePopUp.fxml")));
-        Stage stage = new Stage();
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoginCodePopUp.fxml")));
+        stage = new Stage();
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(new Scene(root));
         stage.setTitle("Login Code");
@@ -196,8 +177,8 @@ public class switchScenesController {
     }
     
         public void createMembership() throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("createMembership.fxml")));
-        Stage stage = new Stage();
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("createMembership.fxml")));
+        stage = new Stage();
         stage.setScene(new Scene(root));
         stage.setTitle("Create Membership");
         stage.show();

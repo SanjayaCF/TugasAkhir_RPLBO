@@ -42,12 +42,12 @@
                            </cursor>
                         </Button>
                         <Separator layoutX="10.0" layoutY="312.0" prefHeight="24.0" prefWidth="231.0" />
-                        <Button layoutX="52.0" layoutY="362.0" mnemonicParsing="false" onAction="#SwitchToCustomerService" prefHeight="16.0" prefWidth="147.0" style="-fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-font-weight: bold; -fx-border-color: white;" text="About Us" textFill="WHITE">
+                        <Button layoutX="52.0" layoutY="362.0" mnemonicParsing="false" onAction="#SwitchToAboutUs" prefHeight="16.0" prefWidth="147.0" style="-fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-font-weight: bold; -fx-border-color: white;" text="About Us" textFill="WHITE">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button layoutX="51.0" layoutY="406.0" mnemonicParsing="false" onAction="#switchToPrivacyPolicy" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-font-weight: bold; -fx-border-color: white;" text="Privacy &amp; Policy" textFill="WHITE">
+                        <Button layoutX="51.0" layoutY="406.0" mnemonicParsing="false" onAction="#SwitchToPrivacyPolicy" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-font-weight: bold; -fx-border-color: white;" text="Privacy &amp; Policy" textFill="WHITE">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

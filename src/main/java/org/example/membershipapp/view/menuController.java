@@ -171,13 +171,23 @@ public class menuController extends switchScenesController {
     }
 
     @FXML
-    protected void SwitchToCustomerService(ActionEvent event) throws IOException {
-        switchToCustomerService(event);
+    protected void SwitchToAboutUs(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("aboutUs.fxml"));
+        Pane newPane = loader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(newPane));
+        stage.setTitle("About Us");
+        stage.show();
     }
 
     @FXML
     protected void SwitchToPrivacyPolicy(ActionEvent event) throws IOException {
-        switchToPrivacyPolicy(event);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("privacyPolicy.fxml"));
+        Pane newPane = loader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(newPane));
+        stage.setTitle("Privacy & Policy");
+        stage.show();
     }
 
     @FXML

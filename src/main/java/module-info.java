@@ -1,4 +1,4 @@
-module org.example.week10 {
+module org.example.memebershipapp {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;

@@ -33,6 +33,7 @@ public class menuController extends switchScenesController {
 
     public static int userID = SessionManager.getInstance().getUserId();
     public static String userName = SessionManager.getInstance().getUserName();
+    public static int choosenMembershipId;
 
     @FXML
     private VBox scrollPaneContent;
@@ -105,23 +106,19 @@ public class menuController extends switchScenesController {
 //        }
 //    }
     
-    private void loadMemberships(String filter) throws SQLException, IOException {
-        try {
+private void loadMemberships(String filter) throws SQLException, IOException {
+    try {
         scrollPaneContent.getChildren().clear();
         final String SQL = "SELECT * FROM users_membership WHERE userID = ? AND membershipName LIKE ?";
-            try (PreparedStatement ps = connection.prepareStatement(SQL)) {
-                ps.setInt(1, menuController.userID);
-                ps.setString(2, "%" + filter + "%");
-                ResultSet rs = ps.executeQuery();
+        try (PreparedStatement ps = connection.prepareStatement(SQL)) {
+            ps.setInt(1, menuController.userID);
+            ps.setString(2, "%" + filter + "%");
+            try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("userMembershipItems.fxml"));
                     AnchorPane userBox = loader.load();      
 
-                    userBox.setOnMouseEntered(event -> userBox.setStyle("-fx-background-color: #ddddff"));
-                    userBox.setOnMouseExited(event -> userBox.setStyle("-fx-background-color: white"));
-
                     membershipItemsController itemController = loader.getController();
-
                     itemController.setName(rs.getString("membershipName"));
                     String currency = rs.getString("currency");
                     itemController.setPrice(currency + " " + rs.getString("price"));
@@ -130,13 +127,46 @@ public class menuController extends switchScenesController {
                     itemController.setBenefit(rs.getString("benefit"));
                     itemController.setPayType(rs.getBoolean("autoPayment") ? "Auto Paid" : "Paid");
                     itemController.setInterval(rs.getString("paymentInterval"));
+
+                    int membershipID = rs.getInt("membershipID");
+
+                    userBox.setOnMouseEntered(event -> userBox.setStyle("-fx-background-color: #ddddff"));
+                    userBox.setOnMouseExited(event -> userBox.setStyle("-fx-background-color: white"));
+                    userBox.setOnMouseClicked(event -> {
+                        try {
+                            menuController.choosenMembershipId = membershipID;
+                            switchToDetailMembership();
+                        } catch (IOException ex) {
+                            Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    });
+
                     scrollPaneContent.getChildren().add(userBox);
                 }
             }
-    } catch (IOException e) {
-            e.printStackTrace();
         }
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+}
+
+protected void switchToDetailMembership() throws IOException {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("detailInformation.fxml"));
+    Pane newMembershipPane = loader.load();
+
+    detailInformationController controller = loader.getController();
+    // Initializing the detailed information in the controller
+    try {
+        controller.initialize();
+    } catch (SQLException ex) {
+        Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
+    }
+
+    Stage stage = new Stage();
+    stage.setScene(new Scene(newMembershipPane));
+    stage.setTitle("Membership Detail");
+    stage.show();
+}
 
     
     @FXML
@@ -151,6 +181,18 @@ public class menuController extends switchScenesController {
         stage.setTitle("Add Membership");
         stage.show();
     }
+    
+//    protected void switchToDetailMembership() throws IOException {
+//        FXMLLoader loader = new FXMLLoader(getClass().getResource("detailInformation.fxml"));
+//        Pane newMembershipPane = loader.load();
+//
+//        addMembershipController controller = loader.getController();
+//        controller.setOnMembershipSaved(this::refreshMemberships);
+//        Stage stage = new Stage();
+//        stage.setScene(new Scene(newMembershipPane));
+//        stage.setTitle("Membership Detail");
+//        stage.show();
+//    }
     
     public void refreshMemberships() {
         try {

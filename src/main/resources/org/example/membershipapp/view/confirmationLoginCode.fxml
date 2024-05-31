@@ -14,7 +14,7 @@
          <children>
             <AnchorPane layoutX="154.0" layoutY="35.0" prefHeight="431.0" prefWidth="331.0">
                <children>
-                  <TextField layoutX="22.0" layoutY="150.0" prefHeight="25.0" prefWidth="289.0" />
+                  <TextField fx:id="confirmUsernameTextField" layoutX="22.0" layoutY="150.0" prefHeight="25.0" prefWidth="289.0" />
                   <Button layoutX="20.0" layoutY="201.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="25.0" prefWidth="289.0" text="NEXT">
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -26,7 +26,7 @@
                         <Font name="Gill Sans MT Bold" size="13.0" />
                      </font>
                   </Label>
-                  <Label layoutX="24.0" layoutY="132.0" text="Login Code" />
+                  <Label layoutX="24.0" layoutY="132.0" text="Username" />
                </children>
             </AnchorPane>
          </children>

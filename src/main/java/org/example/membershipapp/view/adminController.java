@@ -178,7 +178,7 @@ public class adminController extends switchScenesController implements Initializ
     
 
     private void switchButtonStyles(Button clickedButton) {
-        currentActiveButton.setStyle("-fx-background-color: #05071F; -fx-text-fill: white; -fx-text-alignment: center; -fx-font-weight: bold; -fx-border-color: white;");
+        currentActiveButton.setStyle("-fx-background-color: linear-gradient(to top, #05071F, #303A5C, #60698B); -fx-text-fill: white; -fx-text-alignment: center; -fx-font-weight: bold; -fx-border-color: white;");
         clickedButton.setStyle("-fx-background-color: white; -fx-text-fill: black; -fx-text-alignment: center; -fx-font-weight: bold; -fx-border-color: white;");
         currentActiveButton = clickedButton;
     }

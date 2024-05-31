@@ -1,11 +1,16 @@
 package org.example.membershipapp.view;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.example.membershipapp.manager.databaseConnect;
 
 public class detailInformationController {
 
@@ -35,18 +40,30 @@ public class detailInformationController {
 
     @FXML
     private Button btnBack;
+    
+    private static Connection connection;
 
-    // Method to initialize the UI with membership details
-    public void initialize() {
-        // Sample data - you would normally get this from your application logic
-        membershipTypeLabel.setText("Premium");
-        priceLabel.setText("Rp52.490,00");
-        membershipPeriodLabel.setText("4th February 2024 - 4th March 2024");
-        paymentMethodLabel.setText("DANA");
-        autoPaymentLabel.setText("Active");
-        nextPaymentLabel.setText("4th March 2024");
-        benefitLabel.setText("No Ads, Offline Content, Improved Audio Quality, No Shuffle Limit, Access to More Tracks, Organize Unlimited Queues, Full Unlock on Mobile Devices, Prioritized Customer Support");
+    public detailInformationController() {
+        connection = databaseConnect.getConnection();
     }
+
+public void initialize() throws SQLException {
+    String query = "SELECT * FROM users_membership WHERE membershipID = ?";
+    try (PreparedStatement ps = connection.prepareStatement(query)) {
+        ps.setInt(1, menuController.choosenMembershipId);
+        try (ResultSet rs = ps.executeQuery()) {
+            if (rs.next()) {
+                membershipTypeLabel.setText(rs.getString("membershipName"));
+                priceLabel.setText(rs.getString("price"));
+                membershipPeriodLabel.setText(rs.getString("dateStart") + " - " + rs.getString("dateEnd"));
+                paymentMethodLabel.setText(rs.getBoolean("autoPayment") ? "Auto Paid" : "Paid");
+                autoPaymentLabel.setText("Active");
+                nextPaymentLabel.setText(rs.getString("dateEnd"));
+                benefitLabel.setText(rs.getString("benefit"));
+            }
+        }
+    }
+}
 
     @FXML
     private void onStopMembershipClick(ActionEvent event) {

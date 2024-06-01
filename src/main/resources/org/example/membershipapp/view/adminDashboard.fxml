@@ -133,7 +133,7 @@
                   </HBox>
                   <AnchorPane layoutX="14.0" layoutY="190.0" prefHeight="42.0" prefWidth="731.0" style="-fx-background-color: white;">
                      <children>
-                        <Label layoutX="26.0" layoutY="12.0" prefHeight="17.0" prefWidth="20.0" text="No">
+                        <Label layoutX="26.0" layoutY="12.0" prefHeight="17.0" prefWidth="20.0" text="Id">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>

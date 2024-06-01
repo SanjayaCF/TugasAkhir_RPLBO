@@ -343,6 +343,7 @@ private void loadMemberships(String filter) throws SQLException, IOException {
                     AnchorPane userBox = loader.load();      
 
                     membershipItemsController itemController = loader.getController();
+                    itemController.setChosenId(rs.getInt("membershipId"));
                     itemController.setName(rs.getString("membershipName"));
                     String currency = rs.getString("currency");
                     itemController.setPrice(currency + " " + rs.getString("price"));
@@ -352,13 +353,12 @@ private void loadMemberships(String filter) throws SQLException, IOException {
                     itemController.setPayType(rs.getBoolean("autoPayment") ? "Auto Paid" : "Paid");
                     itemController.setInterval(rs.getString("paymentInterval"));
 
-                    int membershipID = rs.getInt("membershipID");
 
                     userBox.setOnMouseEntered(event -> userBox.setStyle("-fx-background-color: #ddddff"));
                     userBox.setOnMouseExited(event -> userBox.setStyle("-fx-background-color: white"));
                     userBox.setOnMouseClicked(event -> {
                         try {
-                            menuController.choosenMembershipId = membershipID;
+                            itemController.setChosenIdToStatic();
                             switchToDetailMembership();
                         } catch (IOException ex) {
                             Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
@@ -377,15 +377,6 @@ private void loadMemberships(String filter) throws SQLException, IOException {
 protected void switchToDetailMembership() throws IOException {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("detailInformation.fxml"));
     Pane newMembershipPane = loader.load();
-
-    detailInformationController controller = loader.getController();
-    // Initializing the detailed information in the controller
-    try {
-        controller.initialize();
-    } catch (SQLException ex) {
-        Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
-    }
-
     Stage stage = new Stage();
     stage.setScene(new Scene(newMembershipPane));
     stage.setTitle("Membership Detail");

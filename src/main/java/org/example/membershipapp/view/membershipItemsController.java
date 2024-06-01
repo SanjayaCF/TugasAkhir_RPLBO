@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 public class membershipItemsController {
+    private int chosenId;
 
     @FXML
     private Label name;
@@ -33,33 +34,72 @@ public class membershipItemsController {
 
     @FXML
     private Label interval;
+    
+    public void setChosenIdToStatic() {
+        menuController.choosenMembershipId = chosenId;
+        System.out.println(chosenId);
+    }
+    
+    public Label getName() {
+        return name;
+    }
+
+    public Label getPrice() {
+        return price;
+    }
+
+    public Label getExpired() {
+        return expired;
+    }
+
+    public Label getCategory() {
+        return category;
+    }
+
+    public Label getBenefit() {
+        return benefit;
+    }
+
+    public Label getPayType() {
+        return payType;
+    }
+
+    public Label getInterval() {
+        return interval;
+    }
+    
+    
+    
+    public void setChosenId(int chosedId) {
+        chosenId = chosedId;
+    }
 
     public void setName(String text) {
-        name.setText(text);
+        getName().setText(text);
     }
 
     public void setPrice(String text) {
-        price.setText(text);
+        getPrice().setText(text);
     }
 
     public void setExpired(String text) {
-        expired.setText(text);
+        getExpired().setText(text);
     }
 
     public void setCategory(String text) {
-        category.setText(text);
+        getCategory().setText(text);
     }
 
     public void setBenefit(String text) {
-        benefit.setText(text);
+        getBenefit().setText(text);
     }
 
     public void setPayType(String text) {
-        payType.setText(text);
+        getPayType().setText(text);
     }
 
     public void setInterval(String text) {
-        interval.setText(text);
+        getInterval().setText(text);
     }
 }
 

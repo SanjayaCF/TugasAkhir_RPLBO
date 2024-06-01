@@ -28,25 +28,45 @@ public class userListController {
     @FXML
     private Label role;
     
+    
+    public Label getName() {
+        return name;
+    }
+
+    public Label getNo() {
+        return no;
+    }
+
+    public Label getUsername() {
+        return username;
+    }
+
+    public Label getMembership() {
+        return membership;
+    }
+
+    public Label getRole() {
+        return role;
+    }
 
     public void setNo(String text) {
-        no.setText(text);
+        getNo().setText(text);
     }
 
     public void setUsername(String text) {
-        username.setText(text);
+        getUsername().setText(text);
     }
 
     public void setName(String text) {
-        name.setText(text);
+        getName().setText(text);
     }
 
     public void setMembership(String text) {
-        membership.setText(text);
+        getMembership().setText(text);
     }
 
     public void setRole(String text) {
-        role.setText(text);
+        getRole().setText(text);
     }
 
 }

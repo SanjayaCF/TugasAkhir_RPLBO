@@ -152,7 +152,7 @@ public class addMembershipController extends switchScenesController {
         Alert a;
         final String SQL = "INSERT INTO users_membership VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement ps = connection.prepareStatement(SQL)) {
-            ps.setInt(1, databaseConnect.countLen("memberships") + 1);
+            ps.setInt(1, databaseConnect.countLen("users_membership") + 1);
             ps.setInt(2, menuController.userID);
             ps.setString(3, membershipName);
             ps.setString(4, price);

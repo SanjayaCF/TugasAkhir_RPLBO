@@ -15,7 +15,13 @@ import org.example.membershipapp.manager.databaseConnect;
 public class detailInformationController {
 
     @FXML
-    private Label membershipTypeLabel;
+    private Label membershipLinkLabel;
+    
+    @FXML
+    private Label categoryLabel;
+    
+    @FXML
+    private Label noteLabel;
 
     @FXML
     private Label priceLabel;
@@ -34,6 +40,12 @@ public class detailInformationController {
 
     @FXML
     private Label benefitLabel;
+    
+    @FXML
+    private Label detailUsername;
+    
+    @FXML
+    private Label detailMembershipName;
 
     @FXML
     private Button btnStopMembership;
@@ -48,13 +60,17 @@ public class detailInformationController {
     }
 
 public void initialize() throws SQLException {
-    String query = "SELECT * FROM users_membership WHERE membershipID = ?";
+    String query = "SELECT * FROM users_membership NATURAL JOIN memberships_category WHERE membershipId = ?";
     try (PreparedStatement ps = connection.prepareStatement(query)) {
         ps.setInt(1, menuController.choosenMembershipId);
         try (ResultSet rs = ps.executeQuery()) {
             if (rs.next()) {
-                membershipTypeLabel.setText(rs.getString("membershipName"));
-                priceLabel.setText(rs.getString("price"));
+                detailUsername.setText(String.join(" ",menuController.userName.split("")));
+                detailMembershipName.setText(rs.getString("membershipName"));
+                categoryLabel.setText(rs.getString("membershipCategory"));
+                noteLabel.setText(rs.getString("note"));
+                membershipLinkLabel.setText(rs.getString("membershipLink"));
+                priceLabel.setText(rs.getString("currency")+" "+rs.getString("price"));
                 membershipPeriodLabel.setText(rs.getString("dateStart") + " - " + rs.getString("dateEnd"));
                 paymentMethodLabel.setText(rs.getBoolean("autoPayment") ? "Auto Paid" : "Paid");
                 autoPaymentLabel.setText("Active");

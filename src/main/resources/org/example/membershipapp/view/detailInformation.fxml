@@ -23,23 +23,23 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </SVGPath>
-            <Label alignment="TOP_CENTER" layoutX="66.0" layoutY="25.0" prefHeight="4.0" prefWidth="116.0" text="U S E R N A M E" />
+            <Label fx:id="detailUsername" layoutX="66.0" layoutY="25.0" prefHeight="4.0" prefWidth="116.0" text="U S E R N A M E">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <Separator layoutX="17.0" layoutY="147.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="843.0" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <Label layoutX="42.0" layoutY="158.0" prefHeight="17.0" prefWidth="270.0" text="Description">
-                     <font>
-                        <Font size="21.0" />
-                     </font>
-                  </Label>
-               </children></AnchorPane>
+            <Label layoutX="42.0" layoutY="158.0" prefHeight="17.0" prefWidth="270.0" text="Description">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
             <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="16.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@spotify%20icon.png" />
                </image>
             </ImageView>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c2c3" height="105.0" layoutX="42.0" layoutY="198.0" stroke="TRANSPARENT" strokeType="INSIDE" width="469.0" />
-            <Label layoutX="87.0" layoutY="87.0" prefHeight="49.0" prefWidth="114.0" text="Spotify" textFill="#706969">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c2c3" height="131.0" layoutX="42.0" layoutY="198.0" stroke="TRANSPARENT" strokeType="INSIDE" width="469.0" />
+            <Label fx:id="detailMembershipName" layoutX="87.0" layoutY="87.0" prefHeight="49.0" prefWidth="591.0" text="Spotify" textFill="#706969">
                <font>
                   <Font size="33.0" />
                </font></Label>
@@ -47,48 +47,48 @@
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Label layoutX="58.0" layoutY="209.0" prefHeight="21.0" prefWidth="238.0" text="Membership Type" textFill="#706969">
+            <Label layoutX="57.0" layoutY="299.0" prefHeight="21.0" prefWidth="131.0" text="Link" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="269.0" prefHeight="17.0" prefWidth="270.0" text="Membership Period" textFill="#706969">
+            <Label layoutX="57.0" layoutY="270.0" prefHeight="21.0" prefWidth="131.0" text="Period" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
             <Separator layoutX="15.0" layoutY="505.0" maxWidth="-Infinity" prefHeight="2.0" prefWidth="845.0" />
-            <Label layoutX="191.0" layoutY="209.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+            <Label layoutX="131.0" layoutY="237.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="membershipTypeLabel" layoutX="219.0" layoutY="209.0" prefHeight="17.0" prefWidth="238.0" text="Premium" textFill="#706969">
+            <Label fx:id="membershipLinkLabel" layoutX="159.0" layoutY="298.0" prefHeight="17.0" prefWidth="238.0" text="Link" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="58.0" layoutY="239.0" prefHeight="21.0" prefWidth="238.0" text="Price" textFill="#706969">
+            <Label layoutX="57.0" layoutY="240.0" prefHeight="21.0" prefWidth="131.0" text="Price" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="191.0" layoutY="239.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+            <Label layoutX="131.0" layoutY="267.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="priceLabel" layoutX="219.0" layoutY="239.0" prefHeight="17.0" prefWidth="238.0" text="Rp52.490,00" textFill="#706969">
+            <Label fx:id="priceLabel" layoutX="159.0" layoutY="238.0" prefHeight="17.0" prefWidth="238.0" text="Rp52.490,00" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="191.0" layoutY="269.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+            <Label layoutX="131.0" layoutY="297.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="membershipPeriodLabel" layoutX="219.0" layoutY="269.0" prefHeight="21.0" prefWidth="265.0" text="4th February 2024 - 4th March 2024" textFill="#706969">
+            <Label fx:id="membershipPeriodLabel" layoutX="159.0" layoutY="267.0" prefHeight="21.0" prefWidth="265.0" text="4th February 2024 - 4th March 2024" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
@@ -109,7 +109,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="autoPaymentLabel" layoutX="714.0" layoutY="240.0" prefHeight="21.0" prefWidth="61.0" text="Active" textFill="#706969">
+            <Label fx:id="autoPaymentLabel" layoutX="714.0" layoutY="240.0" prefHeight="21.0" prefWidth="131.0" text="Active" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
@@ -124,7 +124,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="paymentMethodLabel" layoutX="714.0" layoutY="210.0" prefHeight="21.0" prefWidth="48.0" text="DANA" textFill="#706969">
+            <Label fx:id="paymentMethodLabel" layoutX="714.0" layoutY="210.0" prefHeight="21.0" prefWidth="131.0" text="DANA" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
@@ -144,7 +144,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="nextPaymentLabel" layoutX="714.0" layoutY="270.0" prefHeight="21.0" prefWidth="127.0" text="4th March 2024" textFill="#706969">
+            <Label fx:id="nextPaymentLabel" layoutX="714.0" layoutY="270.0" prefHeight="21.0" prefWidth="131.0" text="4th March 2024" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>
@@ -155,7 +155,33 @@
                   <Font size="21.0" />
                </font>
             </Label>
-            <Label fx:id="benefitLabel" layoutX="60.0" layoutY="364.0" prefHeight="131.0" prefWidth="421.0" text="No Ads, &#10;Offline Content,&#10;Improved Audio Quality, &#10;No Shuffle Limit" textFill="#706969">
+            <Label fx:id="benefitLabel" layoutX="60.0" layoutY="377.0" prefHeight="105.0" prefWidth="421.0" text="No Ads, &#10;Offline Content,&#10;Improved Audio Quality, &#10;No Shuffle Limit" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="131.0" layoutY="207.0" prefHeight="21.0" prefWidth="30.0" text="   :" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="210.0" prefHeight="21.0" prefWidth="131.0" text="Category" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="categoryLabel" layoutX="159.0" layoutY="208.0" prefHeight="17.0" prefWidth="238.0" text="Rp52.490,00" textFill="#706969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="535.0" layoutY="338.0" prefHeight="31.0" prefWidth="103.0" text="User Note">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c2c3" height="105.0" layoutX="535.0" layoutY="378.0" stroke="TRANSPARENT" strokeType="INSIDE" width="318.0" />
+            <Label fx:id="noteLabel" layoutX="541.0" layoutY="377.0" prefHeight="105.0" prefWidth="309.0" text="Note" textFill="#706969">
                <font>
                   <Font size="15.0" />
                </font>

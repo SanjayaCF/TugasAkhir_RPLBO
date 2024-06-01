@@ -11,12 +11,10 @@ public class SessionManager implements Serializable {
     private int userId;
     private String userName;
 
-    // Private constructor to prevent instantiation from outside
     private SessionManager() {
         isLoggedIn = false;
     }
 
-    // Static method to get the singleton instance
     public static SessionManager getInstance() {
         if (instance == null) {
             synchronized (SessionManager.class) {
@@ -29,7 +27,6 @@ public class SessionManager implements Serializable {
         return instance;
     }
 
-    // Method to check if the session file doesn't exist
     public void createSessionFile() {
         File file = new File(SESSION_FILE);
         if (!file.exists()) {
@@ -58,12 +55,10 @@ public class SessionManager implements Serializable {
         }
     }
 
-    // Method to check if user is logged in
     public boolean isLoggedIn() {
         return isLoggedIn;
     }
 
-    // Method to get the user ID
     public int getUserId() {
         return userId;
     }
@@ -79,7 +74,6 @@ public class SessionManager implements Serializable {
         saveSession();
     }
 
-    // Method to simulate logout
     public void logout() {
         isLoggedIn = false;
         saveSession();

@@ -21,7 +21,6 @@
             </Label>
          </children>
       </HBox>
-      <Label layoutX="35.0" layoutY="50.0" prefHeight="50.0" prefWidth="531.0" text="Welcome Admin, please add the corresponding parts for your Memberships data. Kindly contact us if you have any problem." wrapText="true" />
       <Label layoutX="34.0" layoutY="100.0" text="Membership Category:">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -88,11 +87,11 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Button layoutX="554.0" layoutY="447.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="51.0" text="Save">
+      <Button fx:id="btnSave" layoutX="554.0" layoutY="447.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="51.0" text="Save">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="btnSave" layoutX="495.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="25.0" prefWidth="51.0" text="Back">
+      <Button fx:id="btnBack" layoutX="495.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="25.0" prefWidth="51.0" text="Back">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

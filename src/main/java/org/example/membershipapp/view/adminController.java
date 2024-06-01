@@ -90,7 +90,7 @@ public class adminController extends switchScenesController implements Initializ
                 itemController.setNo(idUser);
                 itemController.setUsername(rs.getString("username"));
                 itemController.setName(rs.getString("name"));
-                int userTotalMemberships = databaseConnect.countCondition("memberships", "userID = "+idUser);
+                int userTotalMemberships = databaseConnect.countCondition("users_membership", "userID = "+idUser);
                 itemController.setMembership(Integer.toString(userTotalMemberships));
                 itemController.setRole(rs.getBoolean("privilege") ? "Admin" : "User");
                 
@@ -118,7 +118,7 @@ public class adminController extends switchScenesController implements Initializ
                 itemController.setName(rs.getString("membershipName"));
                 itemController.setBenefit(rs.getString("benefit"));
                 itemController.setExpired(rs.getString("endDate"));
-                itemController.setPrice(formatPrice(rs.getFloat("price")));
+                itemController.setPrice("IDR "+formatPrice(rs.getFloat("price")));
                 itemController.setInterval("Monthly/Yearly");
                 itemController.setPayType(rs.getBoolean("autoPayment")?"Auto Paid":"Paid");
                 

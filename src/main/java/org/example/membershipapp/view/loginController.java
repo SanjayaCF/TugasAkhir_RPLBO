@@ -89,13 +89,11 @@ public class loginController extends switchScenesController {
                         txtUsername.requestFocus();
                     }
                 } catch (IllegalArgumentException e) {
-                    // This likely means the password is in plaintext or not a bcrypt hash
                     if (storedHash.equals(txtPassword.getText())) {
-                        // Plaintext match, hash it and update
+
                         String hashedPassword = BCrypt.hashpw(txtPassword.getText(), BCrypt.gensalt());
                         updatePasswordInDatabase(rs.getInt("id"), hashedPassword);
 
-                        // Allow login
                         int id = rs.getInt("id");
                         String name = rs.getString("name");
                         if (rememberMe.isSelected()) {

@@ -116,17 +116,17 @@
                                     <Font name="System Bold" size="26.0" />
                                  </font>
                               </Label>
-                              <Label text="Total User" />
+                              <Label text="Users Total" />
                            </children>
                         </VBox>
-                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="121.0">
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="147.0">
                            <children>
-                              <Label fx:id="totalAdmin" text="N" textFill="#26bfbc">
+                              <Label fx:id="totalAdmin" alignment="CENTER" contentDisplay="CENTER" text="N" textFill="#26bfbc">
                                  <font>
                                     <Font name="System Bold" size="26.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="17.0" prefWidth="69.0" text="Total Admin" />
+                              <Label prefHeight="17.0" prefWidth="82.0" text="Admins Total" />
                            </children>
                         </VBox>
                      </children>

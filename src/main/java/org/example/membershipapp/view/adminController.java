@@ -42,6 +42,8 @@ public class adminController extends switchScenesController implements Initializ
     @FXML
     private Button btnMemberships;
     @FXML
+    private Button btnEditPrivilege;
+    @FXML
     private Pane pnlMenu;
     @FXML
     private Pane pnlMemberships;

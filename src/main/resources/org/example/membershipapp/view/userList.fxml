@@ -17,7 +17,7 @@
               <Label fx:id="name" alignment="CENTER" layoutX="244.0" layoutY="18.0" prefHeight="17.0" prefWidth="139.0" text="name" textFill="#02030a" />
               <Label fx:id="membership" alignment="CENTER" layoutX="417.0" layoutY="18.0" prefHeight="17.0" prefWidth="83.0" text="membership" textFill="#02030a" />
               <Label fx:id="role" alignment="CENTER" layoutX="533.0" layoutY="18.0" prefHeight="17.0" prefWidth="60.0" text="role" textFill="#02030a" />
-              <Button fx:id="btnEdit" layoutX="630.0" layoutY="13.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: green; -fx-border-radius: 20; -fx-background-color: green;" text="EDIT" textFill="WHITE">
+              <Button fx:id="btnEditPrivilege" layoutX="593.0" layoutY="13.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" style="-fx-border-color: green; -fx-border-radius: 20; -fx-background-color: green;" text="Edit Privilege" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

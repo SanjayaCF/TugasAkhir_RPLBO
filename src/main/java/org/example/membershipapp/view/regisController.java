@@ -6,11 +6,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.IOException;
 import java.sql.*;
 
-public class regisController extends switchScenesController{
+public class regisController extends switchScenesController {
     private static Connection connection;
 
     public regisController() {
@@ -40,7 +41,6 @@ public class regisController extends switchScenesController{
         return valid;
     }
 
-
     @FXML
     protected void btnRegisClick(ActionEvent event) throws IOException, SQLException {
         Alert a;
@@ -49,11 +49,13 @@ public class regisController extends switchScenesController{
         if (checkPass && this.validate(txtUsername.getText(), txtName.getText())) {
             final String SQL2 = "INSERT INTO users(id, username, password, name, privilege) VALUES(?, ?, ?, ?, ?)";
             try (PreparedStatement ps = connection.prepareStatement(SQL2)) {
-                ps.setInt(1, databaseConnect.countLen("users")+1);
+                String hashedPassword = BCrypt.hashpw(txtPassword.getText(), BCrypt.gensalt());
+
+                ps.setInt(1, databaseConnect.countLen("users") + 1);
                 ps.setString(2, txtUsername.getText());
-                ps.setString(3, txtPassword.getText());
+                ps.setString(3, hashedPassword);
                 ps.setString(4, txtName.getText());
-                ps.setBoolean(5,false);
+                ps.setBoolean(5, false);
                 ps.executeUpdate();
 
                 a = new Alert(Alert.AlertType.CONFIRMATION);
@@ -63,7 +65,6 @@ public class regisController extends switchScenesController{
                 txtUsername.getParent().getScene().getWindow().hide();
                 switchToLoginPage(event);
 
-
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -71,13 +72,10 @@ public class regisController extends switchScenesController{
         } else {
             a = new Alert(Alert.AlertType.ERROR);
             a.setHeaderText("Error");
-            String ctx = (!checkPass)?"Password Tidak Sama!":"Username or Name Exist, Try Again!";
+            String ctx = (!checkPass) ? "Passwords do not match!" : "Username or Name already exists, try again!";
             a.setContentText(ctx);
             a.showAndWait();
             txtUsername.requestFocus();
         }
-
     }
-
 }
-

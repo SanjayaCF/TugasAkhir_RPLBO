@@ -35,17 +35,13 @@ public class reminderController {
     @FXML
     private Button btnBack;
 
-    // Method to handle the "Back" button click event
     @FXML
     private void onBackClick(ActionEvent event) {
-        // Close the current window
         Stage stage = (Stage) btnBack.getScene().getWindow();
         stage.close();
     }
 
-    // Method to initialize the controller with data
     public void initialize() {
-        // Set sample data - you would normally get this from your application logic
         usernameLabel.setText("U S E R N A M E");
         transactionIdLabel.setText("ID Transaction        : 202405031925309881");
         nameLabel.setText("Name                     : Username");

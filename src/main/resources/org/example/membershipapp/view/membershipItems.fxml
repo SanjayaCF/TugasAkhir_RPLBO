@@ -15,7 +15,7 @@
       </Label>
       <Label fx:id="expired" layoutX="14.0" layoutY="120.0" opacity="0.8" prefHeight="25.0" prefWidth="177.0" text="Expired" textAlignment="RIGHT" />
       <Label fx:id="category" layoutX="14.0" layoutY="36.0" opacity="0.8" prefHeight="25.0" prefWidth="241.0" text="Membership Name" />
-      <Label fx:id="benefit" layoutX="14.0" layoutY="57.0" opacity="0.8" prefHeight="67.0" prefWidth="205.0" wrapText="true" />
+      <Label fx:id="benefit" layoutX="14.0" layoutY="57.0" opacity="0.8" prefHeight="67.0" prefWidth="272.0" wrapText="true" />
       <Label fx:id="price" alignment="CENTER_RIGHT" layoutX="480.0" layoutY="14.0" prefHeight="25.0" prefWidth="221.0" text="Price" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="16.0" />

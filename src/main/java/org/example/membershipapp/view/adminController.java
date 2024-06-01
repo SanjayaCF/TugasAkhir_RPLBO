@@ -91,6 +91,7 @@ public class adminController extends switchScenesController implements Initializ
                 int userTotalMemberships = databaseConnect.countCondition("memberships", "userID = "+idUser);
                 itemController.setMembership(Integer.toString(userTotalMemberships));
                 itemController.setRole(rs.getBoolean("privilege") ? "Admin" : "User");
+                
 
                 userListScrollPanel.getChildren().add(userBox);
             }
@@ -104,10 +105,10 @@ public class adminController extends switchScenesController implements Initializ
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("membershipItems.fxml"));
-                AnchorPane userBox = loader.load();      
+                AnchorPane userMembership = loader.load();      
 
-                userBox.setOnMouseEntered(event -> userBox.setStyle("-fx-background-color: #ddddff"));
-                userBox.setOnMouseExited(event -> userBox.setStyle("-fx-background-color: white"));
+                userMembership.setOnMouseEntered(event -> userMembership.setStyle("-fx-background-color: #ddddff"));
+                userMembership.setOnMouseExited(event -> userMembership.setStyle("-fx-background-color: white"));
 
                 membershipItemsController itemController = loader.getController();
 
@@ -118,7 +119,16 @@ public class adminController extends switchScenesController implements Initializ
                 itemController.setPrice(formatPrice(rs.getFloat("price")));
                 itemController.setInterval("Monthly/Yearly");
                 itemController.setPayType(rs.getBoolean("autoPayment")?"Auto Paid":"Paid");
-                membershipsScrollPanel.getChildren().add(userBox);
+                
+//                userMembership.setOnMouseClicked(event -> {
+//                    try {
+//                        itemController.setChosenId(rs.getInt("membershipId"));
+//                    } catch (SQLException ex) {
+//                        Logger.getLogger(adminController.class.getName()).log(Level.SEVERE, null, ex);
+//                    }
+//                });
+                
+                membershipsScrollPanel.getChildren().add(userMembership);
             }
         }
     }
@@ -130,6 +140,21 @@ public class adminController extends switchScenesController implements Initializ
         } catch (SQLException | IOException ex) {
             ex.printStackTrace();
         }
+    }
+    
+    
+    @FXML
+    protected void displayMembership(int selectedId) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("createMembership.fxml"));
+        Pane newMembershipPane = loader.load();
+
+        createMembershipController controller = loader.getController();
+        controller.setOnMembershipSaved(this::refreshMemberships);
+        //controller.setChosen("WHERE membershipId = "+Integer.toString(selectedId));
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(newMembershipPane));
+        stage.show(); 
     }
     
     public static String formatPrice(float value) {

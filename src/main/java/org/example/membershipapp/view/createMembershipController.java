@@ -62,6 +62,7 @@ public class createMembershipController {
     private TextArea benefitTextArea;
     @FXML
     private Button btnCreateMembership;
+     
     
 
     public void initialize() {
